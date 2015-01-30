@@ -2,12 +2,13 @@ require 'socket'
 
 class Server
 
-	def init
-		print "new Server \n"
+	def initialize (hostname = "", port = 21)
+		@hostname = hostname
+		@port = port
+	end
+
+	def getStatus
+		print "Server hosted on #{@hostname}:#{@port}\n"
 	end
 
 end
-
-
-serv = Server.new
-serv.init
