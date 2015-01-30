@@ -2,8 +2,8 @@ require 'getoptlong'
 
 require_relative './class/Server'
 
-$hostname = "localhost"
-$port = 21
+hostname = "localhost"
+port = 21
 
 opts = GetoptLong.new(
 	[ '--hostname', '-H', GetoptLong::REQUIRED_ARGUMENT],
@@ -34,16 +34,15 @@ opts.each do |opt, arg|
 			puts "-p, --port : set port"
 		when '--hostname'
 			if arg != ''
-				$hostname = arg
+				hostname = arg
 			end
 		when '--port'
 			if arg != ''
-				$port = arg
+				port = arg
 			end
 	end
 end
 
-server = Server.new $hostname, $port
-#server.launch
+server = Server.new hostname, port
 
 server.getStatus
