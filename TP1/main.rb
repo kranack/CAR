@@ -1,6 +1,7 @@
 require 'getoptlong'
 
 require_relative './class/Server'
+#require_relative './class/Client'
 
 hostname = "localhost"
 port = 21
@@ -44,5 +45,4 @@ opts.each do |opt, arg|
 end
 
 server = Server.new hostname, port
-
 server.getStatus
