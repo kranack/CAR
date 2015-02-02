@@ -1,3 +1,5 @@
+# File : main.rb
+
 require 'getoptlong'
 
 require_relative './class/Server'
