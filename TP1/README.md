@@ -17,7 +17,7 @@ Documentation
 
 * `Barême FTP` : [Barême] (http://moodle.univ-lille1.fr/mod/resource/view.php?id=95119)
 
-* `Consignes Rendu` : [Consignes de rendu] (http://www.fil.univ-lille1.fr/~monperrus/index.php?page=consigne)
+* `Consignes Rendu` : [Consignes de rendu] (http://www.fil.univ-lille1.fr/~monperrus/index.php?page=consigne-tp)
 
 Tests
 -------------
