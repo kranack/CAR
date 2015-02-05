@@ -8,10 +8,13 @@ class Client
 
 	def connectToServer hostname, port
 		@@_socket = TCPSocket.new hostname, port
-		while line = @@_socket.gets
-			puts line
-		end
-
+        Thread.start {
+        while line = gets
+		    @@_socket.puts line
+        end}
+        while line = @@_socket.gets
+            puts line
+        end
 		@@_socket.close
 	end
 end
