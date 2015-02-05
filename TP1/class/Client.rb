@@ -1,4 +1,8 @@
+#
 # File : Client.rb
+#
+#
+# @author Damien Calesse, Pierre Leroy
 
 require 'socket'
 
