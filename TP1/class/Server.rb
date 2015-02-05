@@ -3,7 +3,9 @@
 #	@author Damien Calesse, Pierre Leroy 
 #
 
+
 require 'socket'
+require_relative 'ConnectionHandler'
 
 class Server
 
@@ -30,11 +32,10 @@ class Server
 		@@_server = TCPServer.new @@port
 		loop do
 			Thread.start(@@_server.accept) do |client|
-				puts "Client connected"
-				client.puts "Hello !"
-				client.puts "Time is #{Time.now}"
-				client.close
-				puts "Client disconnected!"
+                client.puts "ok"
+                client.puts client
+				handler = ConnectionHandler.new client
+                handler.handle
 			end
 		end
 	end
