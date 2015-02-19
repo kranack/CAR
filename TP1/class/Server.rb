@@ -23,7 +23,7 @@ class Server
 	def initialize (hostname, port)
 		@@hostname = hostname
 		@@port = port
-		@@portPasv = port*2
+		@@portPasv = rand(65000 - 1024) + 1024
         @@_connections = Hash.new
         @@clients = Hash.new
         @@_connections[:clients] = @@clients
@@ -36,7 +36,7 @@ class Server
 	#
 	def startServer
 		@@_server = TCPServer.new @@port
-        @@_data = TCPServer.new @@portPasv
+        #@@_data = TCPServer.new @@portPasv
 		loop do
 			Thread.start(@@_server.accept) do |client|
                 #client.puts "ok"
@@ -45,7 +45,7 @@ class Server
                 
                 client.puts "220 connexion acceptee"
 				handler = ConnectionHandler.new client
-				handler.setPasv(@@_data, @@portPasv)
+				handler.setPasv @@portPasv
                 handler.handle
 			end
 		end

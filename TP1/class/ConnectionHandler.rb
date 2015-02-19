@@ -15,9 +15,8 @@ class ConnectionHandler
         @@_client = client
     end
 	
-	def setPasv (pasv, portPasv)
-		@@_pasv = pasv
-		passiveMode portPasv
+	def setPasv portPasv
+		@@_pasv = portPasv
 	end
 
     def handle 
@@ -30,7 +29,7 @@ class ConnectionHandler
         	if cmd[0] == "220"
                break
 			elsif cmd[0] == "PASV"
-				addr = passiveMode
+				addr = passiveMode @@_pasv
 				cmd.push(addr)
 				@@_client.puts @@cmdHandler.exec cmd
        		else
@@ -53,7 +52,8 @@ class ConnectionHandler
 		port = 4242
 		x = port/256
 		y = port%256
-		Thread.start(@@_pasv.accept) do |client|
+		passive = TCPServer.new @@_pasv
+		Thread.start(passive.accept) do |client|
 			handler = ConnectionHandler.new client
 			handler.handle
 		end
