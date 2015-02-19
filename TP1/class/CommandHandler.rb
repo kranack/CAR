@@ -113,7 +113,7 @@ class CommandHandler
 
     def LIST
        cmd = "150 Directory listing\r\n"
-       files = %x(cd #{@@_connectionHandler.getCurrentDirectory} && ls -al).split("\n")
+       files = %x{cd #{@@_connectionHandler.getCurrentDirectory} && ls -al}.split("\n")
        puts "#{files}"
        data = []
        files.each do |file|
@@ -189,6 +189,7 @@ class CommandHandler
 	#
 
     def CWD
+		puts "CWD asked for #{@@_args.last}"
         @@_connectionHandler.setCurrentDirectory  @@_args.last
         return "250 Directory successfull changed \r\n"
     end

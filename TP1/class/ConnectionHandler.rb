@@ -18,7 +18,8 @@ class ConnectionHandler
     @@cmdHandler = nil
     @@_state = 0
     @@passiveMode = false
-    @@currentDirectory = "/home/m1/calesse/Documents/CAR/CAR/TP1/Docs"
+    @@currentDirectory = "#{Dir.pwd}/Docs"
+    #@@currentDirectory = "/home/m1/calesse/Documents/CAR/CAR/TP1/Docs"
 
 	#
 	# Initialize Connection Handler
@@ -81,6 +82,7 @@ class ConnectionHandler
                         @@_client.puts cmd
                         @@_dataSocket.close
                         @@_dataSocket = nil
+						@@passiveMode = false
                     else
                         @@_client.puts @@cmdHandler.exec cmd
                     end
@@ -139,7 +141,12 @@ class ConnectionHandler
 	#
 
     def setCurrentDirectory dir
-        puts dir
-        @@currentDirectory = dir
+		if (dir[0,1] == "/")
+			newDir = dir
+		else
+		 	newDir = "#{Dir.pwd}/#{dir}"
+		end
+		puts newDir
+		@@currentDirectory = "#{newDir}"
     end
 end
