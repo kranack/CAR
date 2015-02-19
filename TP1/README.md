@@ -33,11 +33,10 @@ Liens utiles
 Commandes
 -------------
 
-* `Spam.sh` : Il faut lancer le serveur avant de lancer ce test
+* `Lancement du serveur` : 
 
 ```	
 	ruby main.rb -H "localhost" -p 2121
-	./spam.sh
 ```
 
 
