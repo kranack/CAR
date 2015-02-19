@@ -1,90 +1,86 @@
-#
-# File : CommandHandler.rb
-# Description: Handle commands from the client and execute commands on the FTP Server
-#
-# @author Damien Calesse, Pierre Leroy
-#
+module FTPServerFunctions
 
-class CommandHandler
+    COMMANDS = %w[user pass syst pwd list type feat cwd pasv mkd rmd dele cwd stor retr mode quit port]
 
-    @@_commands = nil
-    @@_cmd = nil
-    @@_args = nil
-    @@_connectionHandler = nil
-	
-	#
-	# Initialize
-	# Initialize list of commands available and save connectionHandler
-	# @param connectionHandler [ConnectionHandler] connectionHandler initializing this CommandHandler
-	#
-
-    def initialize connectionHandler
-        @@_commands = ["GET", "STR", "USER", "PASS", "SYST", "FEAT", "PWD", "LIST", "MKD", "PASV", "CWD", "RETR", "REST"]
-        @@_connectionHandler = connectionHandler
+    # USER
+    def user(msg)
+        thread[:user] = msg
+        "331 Username correct"
     end
 
-	#
-	# Get Command
-	# Check if the command asked is implemented on the server
-	# @param cmd [String] command to check
-	# @return [Boolean] command is implemented
-	#
-
-    def get cmd
-        @@_args = nil
-        return @@_commands.include?(cmd)
+    # PASS
+    def pass(msg)
+        thread[:pass] = msg
+        "230 Logged in successfull"
     end
 
-	#
-	# Execute Command
-	# Execute the command if there exists a function related to it
-	# @param cmd [String] command to execute
-	# @return [String] return of the command
-	#
-
-    def exec cmd
-        @@_cmd = cmd[0]
-        @@_args = cmd
-
-        return send(@@_cmd) if respond_to?(@@_cmd)
+    # SYST
+    def syst(msg)
+        "215 What a beautiful FTP server"
     end
 
-	#
-	# USER
-	# Accept all connection
-	# @return [String] return code 200
-	#
-
-    def USER
-        return (@@_args != nil) ? "200 " : "Error Args"
+    # LIST
+    def list(msg)
+        response "150 Directory listing"
+        send_data([`ls -l`.split("\n").join("\r\n") << "\r\n"])
+        "226 Tranfer complete"
     end
 
-	#
-	# PASS
-	# Not used yet
-	# @return [String] return code 230
-	#
-
-    def PASS
-        return "230 - Login successfull"
+    # PWD
+    def pwd(msg)
+        "257 " + Dir.pwd
     end
 
-	#
-	# SYST
-	# Return the type of the system
-	# @return [String] return code 215 with system type
-	#
-
-    def SYST
-        return "215 - UNIX Type : L8"
+    # CWD
+    def cwd(msg)
+        Dir.chdir(msg)
     end
 
-	#
-	# FEAT
-	# Return All the commands available
-	# @return [String] return code 211 + all the commands + code 211
-	#
+    # FEAT
+    def feat(msg)
+        response "211 Features:\n"
+        COMMANDS.each do |cmd|
+            response "#{cmd}"
+        end
+        "211 End"
+    end
 
+    # TYPE
+    def type(msg)
+        if (msg=='A')
+            thread[:mode] = :ascii
+            "200 Type set to ascii"
+        elsif (msg=='I')
+            thread[:mode] = :binary
+            "200 Type set to binary"
+        end
+    end
+
+    # PASV
+    def pasv(msg)
+        "227 Entering Passive Mode #{msg}"
+    end
+
+    # QUIT
+    def quit(msg)
+        thread[:session].close
+        thread[:session] = nil
+        "221 Logged out successfull"
+    end
+
+    # MODE
+    def mode(msg)
+        "202 Only accept stream"
+    end
+
+    # RETR
+    def retr(msg)
+        response "125 Data transfer starting"
+        bytes = send_data(File.new(msg,'r'))
+        "226 Closing data connection, sent #{bytes} bytes"
+    end
+
+<<<<<<< HEAD
     def FEAT
         response  = "211 - Features :\n"
         @@_commands.each do |cmd|
@@ -175,32 +171,73 @@ class CommandHandler
                     data.push(chunk)
                 end
                 count += 1
+=======
+    # STOR
+    def stor(msg)
+        file = File.open(msg,'w')
+        response "125 Data transfer starting"
+        bytes = 0
+        while (data = thread[:datasocket].recv(1024))
+            if (data.nil? or data.empty? or data=="")
+                file.close
+                return "226 Closing data connection, sent #{bytes} bytes"
+            else
+                bytes += file.write data
+>>>>>>> 9864aaafb634396a854b2af8a81269554fbd871b
             end
         end
-        puts data
-        return "250 File download ok", data
-
     end
 
-	#
-	# CWD
-	# Change Working Directory
-	# @return [String] code 250
-	#
+    # CWD
+    def cwd(msg)
+        begin
+            Dir.chdir(msg)
+        rescue Errno::ENOENT
+            "550 Directory not found"
+        else
+            "250 Directory changed to " << Dir.pwd
+        end
+    end
 
+    # DELE
+    def dele(msg)
+        rmd(msg)
+    end
+
+<<<<<<< HEAD
     def CWD
 		puts "CWD asked for #{@@_args.last}"
         @@_connectionHandler.setCurrentDirectory  @@_args.last
         return "250 Directory successfull changed \r\n"
+=======
+    # RMD
+    def rmd(msg)
+        if File.directory? msg
+            Dir::delete msg
+        elsif File.file? msg
+            File::delete msg
+        end
+        "200 OK, deleted #{msg}"
+>>>>>>> 9864aaafb634396a854b2af8a81269554fbd871b
     end
 
-	#
-	# PASV
-	# Enter in passive mode
-	# @return [String] code 227 without address to connect for client
-	#
-
-    def PASV
-	    return "227 Entering Passive Mode(#{@@_args.last})\n"
+    # MKD
+    def mkd(msg)
+        Dir.mkdir(msg)
+        "257 #{msg} created"
     end
+
+    # PORT
+    def port(msg)
+        nums = msg.split(',')
+        port = nums[4].to_i * 256 + nums[5].to_i
+        host = nums[0..3].join('.')
+        if thread[:datasocket]
+            thread[:datasocket].close
+            thread[:datasocket] = nil
+        end
+        thread[:datasocket] = TCPSocket.new(host,port)
+        "200 Passive connection established (#{port})"
+    end
+    
 end

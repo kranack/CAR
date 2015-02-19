@@ -47,4 +47,4 @@ opts.each do |opt, arg|
 end
 
 server = Server.new hostname, port
-server.getStatus
+server.run
