@@ -79,8 +79,8 @@ module FTPServerFunctions
         bytes = send_data(File.new(msg,'r'))
         "226 Closing data connection, sent #{bytes} bytes"
     end
-
-<<<<<<< HEAD
+	
+    # FEAT
     def FEAT
         response  = "211 - Features :\n"
         @@_commands.each do |cmd|
@@ -171,7 +171,10 @@ module FTPServerFunctions
                     data.push(chunk)
                 end
                 count += 1
-=======
+			end
+		end
+	end
+
     # STOR
     def stor(msg)
         file = File.open(msg,'w')
@@ -183,7 +186,6 @@ module FTPServerFunctions
                 return "226 Closing data connection, sent #{bytes} bytes"
             else
                 bytes += file.write data
->>>>>>> 9864aaafb634396a854b2af8a81269554fbd871b
             end
         end
     end
@@ -204,13 +206,13 @@ module FTPServerFunctions
         rmd(msg)
     end
 
-<<<<<<< HEAD
+	# CWD
     def CWD
 		puts "CWD asked for #{@@_args.last}"
         @@_connectionHandler.setCurrentDirectory  @@_args.last
         return "250 Directory successfull changed \r\n"
-=======
-    # RMD
+
+	# RMD
     def rmd(msg)
         if File.directory? msg
             Dir::delete msg
@@ -218,7 +220,6 @@ module FTPServerFunctions
             File::delete msg
         end
         "200 OK, deleted #{msg}"
->>>>>>> 9864aaafb634396a854b2af8a81269554fbd871b
     end
 
     # MKD

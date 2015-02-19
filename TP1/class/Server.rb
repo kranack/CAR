@@ -9,7 +9,7 @@ require 'socket'
 require 'optparse'
 require 'ostruct'
 
-require_relative 'CommandHandler.rb'
+require_relative 'CommandHandler'
 
 
 class Server
