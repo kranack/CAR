@@ -4,9 +4,11 @@ require_relative 'CommandHandler'
 class ConnectionHandler
 
     @@_client = nil
-	@@_pasv = nil
+	@@_pasv = 0
+    @@_data = nil
     @@cmdHandler = nil
     @@_state = 0
+    @@passiveMode = false
     @@currentDirectory = "/home/m1/calesse/Documents/CAR/CAR/TP1/monpetukrainien"
 
     def initialize client
@@ -32,33 +34,40 @@ class ConnectionHandler
 				addr = passiveMode @@_pasv
 				cmd.push(addr)
 				@@_client.puts @@cmdHandler.exec cmd
+                @@passiveMode = true
        		else
                 if (@@cmdHandler.get cmd[0])
-                    @@_client.puts @@cmdHandler.exec cmd
+                    if (@@passiveMode == true)
+                        sleep(1) until (@@_data != nil)
+                        cmd,data = @@cmdHandler.exec cmd
+                        @@_client.puts cmd
+                        data.each do |d|
+                            @@_data.puts d
+                        end
+                        @@_data.close
+                    else
+                        @@_client.puts @@cmdHandler.exec cmd
+                    end
                 else
-                    @@_client.puts "202 - Commande inconnue"
+                     @@_client.puts "202 - Commande inconnue"
                 end
            end
         end
         
         @@_client.close
     end
+    
+    def handlePasv data
+        @@_data = data
+    end
 
 	def passiveMode port
-		#@@_pasv = TCPServer.new(:INET, :STREAM, 0)
-	   	#@@_pasv.bind(Addrinfo.tcp("127.0.0.1", 0))
-		#@@_pasv = TCPServer.new 4242
 		addr = "127,0,0,1"
-		port = 4242
+		port = @@_pasv
 		x = port/256
 		y = port%256
-		passive = TCPServer.new @@_pasv
-		Thread.start(passive.accept) do |client|
-			handler = ConnectionHandler.new client
-			handler.handle
-		end
+		puts @@_pasv
 		return "127,0,0,1,#{x},#{y}"
-		#@@_pasv = TCPSocket.new "127.0.0.1" 230*256+106
 	end
 
     def getCurrentDirectory

@@ -14,6 +14,7 @@ class Server
 	@@portPasv = 42
 	@@_server = nil
     @@_data = nil
+    @@_handler = nil
 
 	#
 	# Initialize FTP Server
@@ -36,27 +37,27 @@ class Server
 	#
 	def startServer
 		@@_server = TCPServer.new @@port
-        #@@_data = TCPServer.new @@portPasv
+        @@_data = TCPServer.new @@portPasv
 		loop do
 			Thread.start(@@_server.accept) do |client|
-                #client.puts "ok"
-                #client.puts client
                 @@_connections[:clients] = client
                 
                 client.puts "220 connexion acceptee"
-				handler = ConnectionHandler.new client
-				handler.setPasv @@portPasv
-                handler.handle
+				@@_handler = ConnectionHandler.new client
+				@@_handler.setPasv @@portPasv
+                @@_handler.handle
 			end
+            Thread.start(@@_data.accept) do |client|
+                @@_handler.handlePasv client
+            end
 		end
 	end
     
-    def enterPasv 
+    def enterPasv
 		@@_data = TCPServer.new @@portPasv
 		loop do
-			Thread.start(@@_data.accept) do |client|
-				handler = ConnectionHandler.new client 
-				handler.handle
+			Thread.start(@@_data.accept) do |client| 
+				@@_handler.handlePasv client
 			end
 		end
     end

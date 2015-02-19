@@ -51,15 +51,18 @@ class CommandHandler
     end
 
     def LIST
-       response = "150 Directory listing\n"
-       files = Dir["/home/m1/calesse/Documents/CAR/CAR/TP1/monpetukrainien"]
+       #response = Hash.new
+       cmd = "150 Directory listing\r\n"
+       files = Dir["/home/m1/calesse/Documents/CAR/CAR/TP1/monpetukrainien/*"]
+       data = []
        files.each do |file|
-           #response += "/home/m1/calesse/Documents/CAR/CAR/TP1/monpetukrainien\n"
-           puts "#{file}\n"
+           data.push("#{file}\r\n")
        end
        #response += "150 Directory listing\n"
-       response += "226 Directory send\n"
-       return response
+       #response.map! {|index| if (index == "cmd")
+        #   = "226 Directory send\n"
+       cmd += "226 Directory send\r\n"
+       return cmd,data
     end
 
     def MKD
