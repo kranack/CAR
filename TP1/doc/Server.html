@@ -114,7 +114,22 @@
         </dt>
         <dd><pre class="code"><span class='int'>21</span></pre></dd>
       
+        <dt id="portPasv-classvariable" class="">@@portPasv =
+          
+        </dt>
+        <dd><pre class="code"><span class='int'>42</span></pre></dd>
+      
         <dt id="_server-classvariable" class="">@@_server =
+          
+        </dt>
+        <dd><pre class="code"><span class='kw'>nil</span></pre></dd>
+      
+        <dt id="_data-classvariable" class="">@@_data =
+          
+        </dt>
+        <dd><pre class="code"><span class='kw'>nil</span></pre></dd>
+      
+        <dt id="_handler-classvariable" class="">@@_handler =
           
         </dt>
         <dd><pre class="code"><span class='kw'>nil</span></pre></dd>
@@ -135,6 +150,31 @@
     </h2>
 
     <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#enterPasv-instance_method" title="#enterPasv (instance method)">- (Object) <strong>enterPasv</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Enter in Passive Mode This method is no longer used Passive mode is handle
+in ConnectionHandler.</p>
+</div></span>
+  
+</li>
+
       
         <li class="public ">
   <span class="summary_signature">
@@ -204,7 +244,9 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Start FTP Server.</p>
+<p>Start FTP Server Start a new TCPServer on the port specified at the
+initialization @@port For each connection accepted, start a new Thread an
+initialize a new ConnectionHandler.</p>
 </div></span>
   
 </li>
@@ -278,18 +320,26 @@
       <pre class="lines">
 
 
-19
-20
-21
-22
-23</pre>
+27
+28
+29
+30
+31
+32
+33
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'class/Server.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'class/Server.rb', line 27</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span> <span class='lparen'>(</span><span class='id identifier rubyid_hostname'>hostname</span><span class='comma'>,</span> <span class='id identifier rubyid_port'>port</span><span class='rparen'>)</span>
 	<span class='cvar'>@@hostname</span> <span class='op'>=</span> <span class='id identifier rubyid_hostname'>hostname</span>
 	<span class='cvar'>@@port</span> <span class='op'>=</span> <span class='id identifier rubyid_port'>port</span>
+	<span class='cvar'>@@portPasv</span> <span class='op'>=</span> <span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>65000</span> <span class='op'>-</span> <span class='int'>1024</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='int'>1024</span>
+       <span class='cvar'>@@_connections</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+       <span class='cvar'>@@clients</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+       <span class='cvar'>@@_connections</span><span class='lbracket'>[</span><span class='symbol'>:clients</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='cvar'>@@clients</span>
 	<span class='id identifier rubyid_startServer'>startServer</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -305,7 +355,59 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="getStatus-instance_method">
+  <h3 class="signature first" id="enterPasv-instance_method">
+  
+    - (<tt>Object</tt>) <strong>enterPasv</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Enter in Passive Mode This method is no longer used Passive mode is handle
+in ConnectionHandler</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+69
+70
+71
+72
+73
+74
+75
+76</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'class/Server.rb', line 69</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_enterPasv'>enterPasv</span>
+		<span class='cvar'>@@_data</span> <span class='op'>=</span> <span class='const'>TCPServer</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='cvar'>@@portPasv</span>
+		<span class='id identifier rubyid_loop'>loop</span> <span class='kw'>do</span>
+			<span class='const'>Thread</span><span class='period'>.</span><span class='id identifier rubyid_start'>start</span><span class='lparen'>(</span><span class='cvar'>@@_data</span><span class='period'>.</span><span class='id identifier rubyid_accept'>accept</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_client'>client</span><span class='op'>|</span> 
+<span class='cvar'>@@_handler</span><span class='period'>.</span><span class='id identifier rubyid_handlePasv'>handlePasv</span> <span class='id identifier rubyid_client'>client</span>
+			<span class='kw'>end</span>
+		<span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getStatus-instance_method">
   
     - (<tt>Object</tt>) <strong>getStatus</strong> 
   
@@ -348,12 +450,12 @@
       <pre class="lines">
 
 
-47
-48
-49</pre>
+83
+84
+85</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'class/Server.rb', line 47</span>
+      <pre class="code"><span class="info file"># File 'class/Server.rb', line 83</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_getStatus'>getStatus</span>
 	<span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Server hosted on </span><span class='embexpr_beg'>#{</span><span class='cvar'>@@hostname</span><span class='embexpr_end'>}</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='cvar'>@@port</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
@@ -375,7 +477,9 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Start FTP Server</p>
+<p>Start FTP Server Start a new TCPServer on the port specified at the
+initialization @@port For each connection accepted, start a new Thread an
+initialize a new ConnectionHandler</p>
 
 
   </div>
@@ -389,32 +493,46 @@
       <pre class="lines">
 
 
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40</pre>
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'class/Server.rb', line 29</span>
+      <pre class="code"><span class="info file"># File 'class/Server.rb', line 43</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_startServer'>startServer</span>
 	<span class='cvar'>@@_server</span> <span class='op'>=</span> <span class='const'>TCPServer</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='cvar'>@@port</span>
-	<span class='id identifier rubyid_loop'>loop</span> <span class='kw'>do</span>
+       <span class='comment'>#@@_data = TCPServer.new @@portPasv
+</span>	<span class='id identifier rubyid_loop'>loop</span> <span class='kw'>do</span>
 		<span class='const'>Thread</span><span class='period'>.</span><span class='id identifier rubyid_start'>start</span><span class='lparen'>(</span><span class='cvar'>@@_server</span><span class='period'>.</span><span class='id identifier rubyid_accept'>accept</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_client'>client</span><span class='op'>|</span>
-			<span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Client connected</span><span class='tstring_end'>&quot;</span></span>
-			<span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Hello !</span><span class='tstring_end'>&quot;</span></span>
-			<span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Time is </span><span class='embexpr_beg'>#{</span><span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
-			<span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_close'>close</span>
-			<span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Client disconnected!</span><span class='tstring_end'>&quot;</span></span>
+               <span class='cvar'>@@_connections</span><span class='lbracket'>[</span><span class='symbol'>:clients</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_client'>client</span>
+               
+               <span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>220 connexion acceptee</span><span class='tstring_end'>&quot;</span></span>
+			<span class='cvar'>@@_handler</span> <span class='op'>=</span> <span class='const'>ConnectionHandler</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_client'>client</span>
+			<span class='cvar'>@@_handler</span><span class='period'>.</span><span class='id identifier rubyid_setPasv'>setPasv</span> <span class='cvar'>@@portPasv</span>
+               <span class='cvar'>@@_handler</span><span class='period'>.</span><span class='id identifier rubyid_handle'>handle</span>
 		<span class='kw'>end</span>
+           <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>
+           Thread.start(@@_data.accept) do |client|
+               @@_handler.handlePasv client
+           end
+           </span><span class='tstring_end'>&#39;</span></span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span>
 	<span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -427,7 +545,7 @@
 </div>
 
     <div id="footer">
-  Generated on Wed Feb  4 00:38:37 2015 by
+  Generated on Thu Feb 19 18:08:29 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.1.5).
 </div>

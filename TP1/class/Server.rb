@@ -1,5 +1,7 @@
 #
 #	File : Server.rb
+#	Description: Server Class launch a new FTP Server and handle client connection
+#				 creating a new ConnectionHandler
 #	@author Damien Calesse, Pierre Leroy 
 #
 
@@ -21,6 +23,7 @@ class Server
 	# @param hostname [String] hostname of the server (default is `localhost`)
 	# @param port [Int] port of the server (default is 21)
 	#
+	
 	def initialize (hostname, port)
 		@@hostname = hostname
 		@@port = port
@@ -33,8 +36,10 @@ class Server
 
 	#
 	# Start FTP Server
+	# Start a new TCPServer on the port specified at the initialization @@port
+	# For each connection accepted, start a new Thread an initialize a new ConnectionHandler
 	#
-	#
+	
 	def startServer
 		@@_server = TCPServer.new @@port
         #@@_data = TCPServer.new @@portPasv
@@ -54,7 +59,13 @@ class Server
             '''
 		end
 	end
-    
+   
+	#
+	#	Enter in Passive Mode
+	#	This method is no longer used
+	#	Passive mode is handle in ConnectionHandler
+	#
+	
     def enterPasv
 		@@_data = TCPServer.new @@portPasv
 		loop do

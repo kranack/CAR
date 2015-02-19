@@ -1,6 +1,6 @@
 #
 # File : Client.rb
-#
+# Description: Simple Client to launch Unit test on FTP Server
 #
 # @author Damien Calesse, Pierre Leroy
 
@@ -9,6 +9,13 @@ require 'socket'
 class Client
 
 	@@_socket = nil
+
+	#
+	# Connect To Server
+	# Create a new TCP Socket to connect on FTP Server 
+	# @param hostname [String] hostname of the server
+	# @param port [Int] port of the server
+	#
 
 	def connectToServer hostname, port
 		@@_socket = TCPSocket.new hostname, port
