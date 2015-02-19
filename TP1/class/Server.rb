@@ -37,7 +37,7 @@ class Server
 	#
 	def startServer
 		@@_server = TCPServer.new @@port
-        @@_data = TCPServer.new @@portPasv
+        #@@_data = TCPServer.new @@portPasv
 		loop do
 			Thread.start(@@_server.accept) do |client|
                 @@_connections[:clients] = client
@@ -47,9 +47,11 @@ class Server
 				@@_handler.setPasv @@portPasv
                 @@_handler.handle
 			end
+            '''
             Thread.start(@@_data.accept) do |client|
                 @@_handler.handlePasv client
             end
+            '''
 		end
 	end
     

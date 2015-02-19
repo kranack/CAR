@@ -6,7 +6,7 @@ class CommandHandler
     @@_connectionHandler = nil
 
     def initialize connectionHandler
-        @@_commands = ["GET", "STR", "USER", "PASS", "SYST", "FEAT", "PWD", "LIST", "MKD", "PASV"]
+        @@_commands = ["GET", "STR", "USER", "PASS", "SYST", "FEAT", "PWD", "LIST", "MKD", "PASV", "CWD", "RETR", "REST"]
         @@_connectionHandler = connectionHandler
     end
 
@@ -45,22 +45,18 @@ class CommandHandler
     end
 
     def PWD
-        return "257 /home/m1/calesse/Documents/CAR/CAR/TP1/monpetukrainien" 
-        #dir = @@_connectionHandler.getCurrentDirectory
-        #return "257 #{dir}"
+        return "257 #{@@_connectionHandler.getCurrentDirectory}" 
     end
 
     def LIST
-       #response = Hash.new
        cmd = "150 Directory listing\r\n"
-       files = Dir["/home/m1/calesse/Documents/CAR/CAR/TP1/monpetukrainien/*"]
+       files = %x(cd #{@@_connectionHandler.getCurrentDirectory} && ls -al).split("\n")
+       puts "#{files}"
        data = []
        files.each do |file|
            data.push("#{file}\r\n")
+           puts "#{file}"
        end
-       #response += "150 Directory listing\n"
-       #response.map! {|index| if (index == "cmd")
-        #   = "226 Directory send\n"
        cmd += "226 Directory send\r\n"
        return cmd,data
     end
@@ -69,8 +65,43 @@ class CommandHandler
 
     end
 
-    def CWD
+    def RETR
+        data = []
         
+        #File.open(@@_args.last, 'rb') do |file|
+        '''
+            while chunk = file.read(1024*1024*120)
+                data.push(chunk)
+            end
+            #data.push(EOF)
+        end
+        '''
+        file = open(@@_args.last, "rb")
+        data.push(file.read)
+        data.push("\r\r\n\n")
+        return "250 File download ok", data
+    end
+
+    def REST
+        pos = @@_args.last
+        data = []
+        count = 0
+        File.open(@@_args.last, 'rb') do |file|
+            while chunk = file.read(pos-1)
+                if (count > 0)
+                    data.push(chunk)
+                end
+                count += 1
+            end
+        end
+        puts data
+        return "250 File download ok", data
+
+    end
+
+    def CWD
+        @@_connectionHandler.setCurrentDirectory  @@_args.last
+        return "250 Directory successfull changed \r\n"
     end
 
     def PASV

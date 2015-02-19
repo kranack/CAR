@@ -6,13 +6,13 @@ class ConnectionHandler
     @@_client = nil
 	@@_pasv = 0
     @@_data = nil
+    @@_dataSocket = nil
     @@cmdHandler = nil
     @@_state = 0
     @@passiveMode = false
-    @@currentDirectory = "/home/m1/calesse/Documents/CAR/CAR/TP1/monpetukrainien"
+    @@currentDirectory = "/home/m1/calesse/Documents/CAR/CAR/TP1/Docs"
 
     def initialize client
-        #client.puts client
         @@cmdHandler = CommandHandler.new self
         @@_client = client
     end
@@ -35,16 +35,28 @@ class ConnectionHandler
 				cmd.push(addr)
 				@@_client.puts @@cmdHandler.exec cmd
                 @@passiveMode = true
-       		else
+                self.handlePasv
+            '''
+            elsif cmd[0] == "RETR"
+                self.handlePasv
+                sleep(1) until (@@_dataSocket != nil)
+                @@_dataSocket.puts @@cmdHandler.exec cmd
+                @@_dataSocket.close
+                @@_dataSocket = nil
+            '''
+            else
                 if (@@cmdHandler.get cmd[0])
                     if (@@passiveMode == true)
-                        sleep(1) until (@@_data != nil)
+                        sleep(1) until (@@_dataSocket != nil)
                         cmd,data = @@cmdHandler.exec cmd
-                        @@_client.puts cmd
+                        #@@_client.puts cmd
                         data.each do |d|
-                            @@_data.puts d
+                            puts d
+                            @@_dataSocket.write d
                         end
-                        @@_data.close
+                        @@_client.puts cmd
+                        @@_dataSocket.close
+                        @@_dataSocket = nil
                     else
                         @@_client.puts @@cmdHandler.exec cmd
                     end
@@ -57,8 +69,12 @@ class ConnectionHandler
         @@_client.close
     end
     
-    def handlePasv data
-        @@_data = data
+    def handlePasv 
+        @@_data = TCPServer.new @@_pasv 
+            Thread.start(@@_data.accept) do |client|
+                @@_dataSocket = client
+                puts "#{@@_dataSocket}"
+            end
     end
 
 	def passiveMode port
@@ -71,7 +87,12 @@ class ConnectionHandler
 	end
 
     def getCurrentDirectory
-        return @@curentDirectory
+        puts @@currentDirectory
+        return @@currentDirectory
     end
 
+    def setCurrentDirectory dir
+        puts dir
+        @@currentDirectory = dir
+    end
 end
