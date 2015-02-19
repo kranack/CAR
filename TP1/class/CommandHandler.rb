@@ -1,112 +1,143 @@
-class CommandHandler
+module FTPServerFunctions
 
-    @@_commands = nil
-    @@_cmd = nil
-    @@_args = nil
-    @@_connectionHandler = nil
+    COMMANDS = %w[user pass syst pwd list type feat cwd pasv mkd rmd dele cwd stor retr mode quit port]
 
-    def initialize connectionHandler
-        @@_commands = ["GET", "STR", "USER", "PASS", "SYST", "FEAT", "PWD", "LIST", "MKD", "PASV", "CWD", "RETR", "REST"]
-        @@_connectionHandler = connectionHandler
+    # USER
+    def user(msg)
+        thread[:user] = msg
+        "331 Username correct"
     end
 
-    def get cmd
-        @@_args = nil
-        return @@_commands.include?(cmd)
+    # PASS
+    def pass(msg)
+        thread[:pass] = msg
+        "230 Logged in successfull"
     end
 
-    def exec cmd
-        @@_cmd = cmd[0]
-        @@_args = cmd
-
-        return send(@@_cmd) if respond_to?(@@_cmd)
+    # SYST
+    def syst(msg)
+        "215 What a beautiful FTP server"
     end
 
-    def USER
-        #return "youpi"
-        return (@@_args != nil) ? "200 " : "Error Args"
+    # LIST
+    def list(msg)
+        response "150 Directory listing"
+        send_data([`ls -l`.split("\n").join("\r\n") << "\r\n"])
+        "226 Tranfer complete"
     end
 
-    def PASS
-        return "230 - Login successfull"
+    # PWD
+    def pwd(msg)
+        "257 " + Dir.pwd
     end
 
-    def SYST
-        return "215 - UNIX Type : L8"
+    # CWD
+    def cwd(msg)
+        Dir.chdir(msg)
     end
 
-    def FEAT
-        response  = "211 - Features :\n"
-        @@_commands.each do |cmd|
-            response += "#{cmd}\n"
+    # FEAT
+    def feat(msg)
+        response "211 Features:\n"
+        COMMANDS.each do |cmd|
+            response "#{cmd}"
         end
-        response += "211 - End"
-        return response
+        "211 End"
     end
 
-    def PWD
-        return "257 #{@@_connectionHandler.getCurrentDirectory}" 
+    # TYPE
+    def type(msg)
+        if (msg=='A')
+            thread[:mode] = :ascii
+            "200 Type set to ascii"
+        elsif (msg=='I')
+            thread[:mode] = :binary
+            "200 Type set to binary"
+        end
     end
 
-    def LIST
-       cmd = "150 Directory listing\r\n"
-       files = %x(cd #{@@_connectionHandler.getCurrentDirectory} && ls -al).split("\n")
-       puts "#{files}"
-       data = []
-       files.each do |file|
-           data.push("#{file}\r\n")
-           puts "#{file}"
-       end
-       cmd += "226 Directory send\r\n"
-       return cmd,data
+    # PASV
+    def pasv(msg)
+        "227 Entering Passive Mode #{msg}"
     end
 
-    def MKD
-
+    # QUIT
+    def quit(msg)
+        thread[:session].close
+        thread[:session] = nil
+        "221 Logged out successfull"
     end
 
-    def RETR
-        data = []
-        
-        #File.open(@@_args.last, 'rb') do |file|
-        '''
-            while chunk = file.read(1024*1024*120)
-                data.push(chunk)
+    # MODE
+    def mode(msg)
+        "202 Only accept stream"
+    end
+
+    # RETR
+    def retr(msg)
+        response "125 Data transfer starting"
+        bytes = send_data(File.new(msg,'r'))
+        "226 Closing data connection, sent #{bytes} bytes"
+    end
+
+    # STOR
+    def stor(msg)
+        file = File.open(msg,'w')
+        response "125 Data transfer starting"
+        bytes = 0
+        while (data = thread[:datasocket].recv(1024))
+            if (data.nil? or data.empty? or data=="")
+                file.close
+                return "226 Closing data connection, sent #{bytes} bytes"
+            else
+                bytes += file.write data
             end
-            #data.push(EOF)
         end
-        '''
-        file = open(@@_args.last, "rb")
-        data.push(file.read)
-        data.push("\r\r\n\n")
-        return "250 File download ok", data
     end
 
-    def REST
-        pos = @@_args.last
-        data = []
-        count = 0
-        File.open(@@_args.last, 'rb') do |file|
-            while chunk = file.read(pos-1)
-                if (count > 0)
-                    data.push(chunk)
-                end
-                count += 1
-            end
+    # CWD
+    def cwd(msg)
+        begin
+            Dir.chdir(msg)
+        rescue Errno::ENOENT
+            "550 Directory not found"
+        else
+            "250 Directory changed to " << Dir.pwd
         end
-        puts data
-        return "250 File download ok", data
-
     end
 
-    def CWD
-        @@_connectionHandler.setCurrentDirectory  @@_args.last
-        return "250 Directory successfull changed \r\n"
+    # DELE
+    def dele(msg)
+        rmd(msg)
     end
 
-    def PASV
-	#addr = @@_connectionHandler.pasiveMode
-	#addr="127,0,0,1,230,80"
-	    return "227 Entering Passive Mode(#{@@_args.last})\n"
+    # RMD
+    def rmd(msg)
+        if File.directory? msg
+            Dir::delete msg
+        elsif File.file? msg
+            File::delete msg
+        end
+        "200 OK, deleted #{msg}"
     end
+
+    # MKD
+    def mkd(msg)
+        Dir.mkdir(msg)
+        "257 #{msg} created"
+    end
+
+    # PORT
+    def port(msg)
+        nums = msg.split(',')
+        port = nums[4].to_i * 256 + nums[5].to_i
+        host = nums[0..3].join('.')
+        if thread[:datasocket]
+            thread[:datasocket].close
+            thread[:datasocket] = nil
+        end
+        thread[:datasocket] = TCPSocket.new(host,port)
+        "200 Passive connection established (#{port})"
+    end
+    
 end
