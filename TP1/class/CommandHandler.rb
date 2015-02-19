@@ -6,7 +6,7 @@ class CommandHandler
     @@_connectionHandler = nil
 
     def initialize connectionHandler
-        @@_commands = ["GET", "STR", "USER", "PASS", "SYST", "FEAT", "PWD", "LIST", "MKD"]
+        @@_commands = ["GET", "STR", "USER", "PASS", "SYST", "FEAT", "PWD", "LIST", "MKD", "PASV"]
         @@_connectionHandler = connectionHandler
     end
 
@@ -52,7 +52,7 @@ class CommandHandler
 
     def LIST
        response = "150 Directory listing\n"
-       files = Dir["/home/m1/calesse/Documents/CAR/CAR/TP1/monpetukrainien/*"]
+       files = Dir["/home/m1/calesse/Documents/CAR/CAR/TP1/monpetukrainien"]
        files.each do |file|
            #response += "/home/m1/calesse/Documents/CAR/CAR/TP1/monpetukrainien\n"
            puts "#{file}\n"
@@ -71,6 +71,8 @@ class CommandHandler
     end
 
     def PASV
-        return "227 Entering Passive Mode(127,0,0,1,22,203)\n"
+	#addr = @@_connectionHandler.pasiveMode
+	#addr="127,0,0,1,230,80"
+	    return "227 Entering Passive Mode(#{@@_args.last})\n"
     end
 end

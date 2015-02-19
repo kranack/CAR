@@ -11,6 +11,7 @@ class Server
 
 	@@hostname = "localhost"
 	@@port = 21
+	@@portPasv = 42
 	@@_server = nil
     @@_data = nil
 
@@ -22,6 +23,7 @@ class Server
 	def initialize (hostname, port)
 		@@hostname = hostname
 		@@port = port
+		@@portPasv = port*2
         @@_connections = Hash.new
         @@clients = Hash.new
         @@_connections[:clients] = @@clients
@@ -34,7 +36,7 @@ class Server
 	#
 	def startServer
 		@@_server = TCPServer.new @@port
-        @@_data = TCPServer.new @@port.to_i-1
+        @@_data = TCPServer.new @@portPasv
 		loop do
 			Thread.start(@@_server.accept) do |client|
                 #client.puts "ok"
@@ -43,20 +45,21 @@ class Server
                 
                 client.puts "220 connexion acceptee"
 				handler = ConnectionHandler.new client
+				handler.setPasv(@@_data, @@portPasv)
                 handler.handle
 			end
-            Thread.start(@@_data.accept) do |client|
-                @@_connections[:clients] = client
-                client.puts "220 connexion acceptee"
-                handler = ConnectionHandler.new client
-                handler.handle
-            end
 		end
 	end
     
-    #def enterPasv @@_client
-        
-    #end
+    def enterPasv 
+		@@_data = TCPServer.new @@portPasv
+		loop do
+			Thread.start(@@_data.accept) do |client|
+				handler = ConnectionHandler.new client 
+				handler.handle
+			end
+		end
+    end
         
 	#
 	# Return the current server status
