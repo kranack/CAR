@@ -1,6 +1,6 @@
 module FTPServerFunctions
 
-    COMMANDS = %w[user pass syst pwd list type feat cwd pasv mkd rmd dele cwd stor retr mode quit port]
+    COMMANDS = %w[user pass syst pwd list type feat cwd pasv mkd rmd dele cwd stor retr mode quit port site rnfr rnto]
 
     # USER
     def user(msg)
@@ -16,7 +16,8 @@ module FTPServerFunctions
 
     # SYST
     def syst(msg)
-        "215 What a beautiful FTP server"
+        #"215 What a beautiful FTP server"
+        "215 Unix Type: #{thread[:mode]}"
     end
 
     # LIST
@@ -140,4 +141,24 @@ module FTPServerFunctions
         "200 Passive connection established (#{port})"
     end
     
+    # SITE
+    def site(msg)
+        cmd = msg.split(' ')
+        `#{cmd[0].downcase} #{cmd[1..cmd.length].join(' ')} `
+        "200 #{cmd[0].downcase} #{cmd[1..cmd.length].join(' ')} OK"
+    end
+    
+    # NRFR
+    def rnfr(msg)
+        thread[:rnfr] = msg
+        "200 #{msg} to rename" 
+    end
+
+    # RNTO
+    def rnto(msg)
+        `mv #{thread[:rnfr]} #{msg}`
+        thread[:rnfr] = nil
+        "200 successfully renamed into #{msg}"
+    end
+
 end

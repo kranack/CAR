@@ -20,10 +20,13 @@ class Server
 	# @param port [Int] port of the server (default is 2121)
 	#
 	def initialize(hostname, port)
+		puts "Server starting up ..."
+
 		@params = OpenStruct.new
 		@params.host = "127.0.0.1"
 		@params.port = 2121
-		@params.root = "/home/pierre/Documents/MasterS2/CAR/TP1/Docs"
+		@params.root = "#{Dir.pwd}/Docs"
+        #@params.root = "/home/pierre/Documents/MasterS2/CAR/TP1/Docs"
 
 		# start
 		@server = TCPServer.new(@params.host, @params.port)
@@ -37,8 +40,7 @@ class Server
 	# Start loop
 	#
 	def run
-		puts "Server starting up ..."
-
+        puts "My body is ready"
 		@threads = []
 
 		loop do
