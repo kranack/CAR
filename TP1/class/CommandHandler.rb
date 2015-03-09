@@ -29,7 +29,7 @@ module FTPServerFunctions
 
     # PWD
     def pwd(msg)
-        "257 " + Dir.pwd
+        "257 \"" + Dir.pwd + "\""
     end
 
     # CWD

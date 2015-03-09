@@ -23,8 +23,8 @@ class Server
 		puts "Server starting up ..."
 
 		@params = OpenStruct.new
-		@params.host = "127.0.0.1"
-		@params.port = 2121
+		@params.host = hostname
+		@params.port = port
 		@params.root = "#{Dir.pwd}/Docs"
         #@params.root = "/home/pierre/Documents/MasterS2/CAR/TP1/Docs"
 
