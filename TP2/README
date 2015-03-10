@@ -1,0 +1,3 @@
+In a terminal :
+
+php phpunit.phar tests/FTPTest.php
