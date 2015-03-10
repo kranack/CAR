@@ -1,6 +1,6 @@
 module FTPServerFunctions
 
-    COMMANDS = %w[user pass syst pwd list type feat cwd pasv mkd rmd dele cwd stor retr mode quit port site rnfr rnto]
+    COMMANDS = %w[user pass syst pwd list type feat cwd pasv mkd rmd dele cwd stor retr mode quit port site rnfr rnto cdup]
 
     # USER
     def user(msg)
@@ -33,9 +33,9 @@ module FTPServerFunctions
     end
 
     # CWD
-    def cwd(msg)
-        Dir.chdir(msg)
-    end
+    #def cwd(msg)
+    #    Dir.chdir(msg)
+    #end
 
     # FEAT
     def feat(msg)
@@ -161,4 +161,8 @@ module FTPServerFunctions
         "200 successfully renamed into #{msg}"
     end
 
+    def cdup(msg)
+	Dir.chdir(@params.root)
+	"250 Directory successfully changed"
+    end
 end
