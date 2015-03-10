@@ -12,5 +12,5 @@ TP1 : Serveur FTP
 TP2 : Passerelle REST
 ------------------
 
-* `Language` : Javascript
+* `Language` : PHP
 * `Authors`  : Damien Calesse - Pierre Leroy
