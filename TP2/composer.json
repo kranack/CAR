@@ -1,8 +1,5 @@
 {
 	"require": {
 		"slim/slim": "2.*"
-	},
-    "require-dev": {
-        "phpdocumentor/phpdocumentor": "2.*"
-    }
+	}
 }
