@@ -1,4 +1,13 @@
 <?php
+    /**
+     * Get Routes
+     *
+     * All the get request in one file
+     *
+     * @author Damien Calesse
+     * @author Pierre Leroy
+     */    
+
 
 	$app->get('/files', function() {
 		$ftp = new FTP("localhost", "2121");
