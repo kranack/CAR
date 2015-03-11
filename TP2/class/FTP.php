@@ -102,11 +102,15 @@
 		function get($filename, $mode = FTP_ASCII) {
 			assert($this->conn);
 
-			$handler = fopen('php://stdout', 'w') or die ('Impossible d\'écrire sur la sortie standard');
-			$result = ftp_nb_fget($this->conn, $handler, $filename, $mode);
-			while ($result == FTP_MOREDATA) $result = ftp_nb_continue($this->conn);
+			ob_start();
+			$result = ftp_nb_get($this->conn, 'php://output', $filename, $mode);
+			while ($result == FTP_MOREDATA)
+				$result = ftp_nb_continue($this->conn);
+			$data = ob_get_contents();
+			ob_get_clean();
+			
 			if($result == FTP_FINISHED)
-				print $handler;
+				print $data;
 		}
 
 		/**
