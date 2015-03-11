@@ -16,7 +16,14 @@
 		$ftp->cdup();
 		$list = $ftp->ls($ftp->pwd());
 
-		$app->render('index.php', array('title' => '/', 'files' => $list, 'uri' => $app->request->getReferrer()));
+		$app->render('index.php',
+					array(
+							'title' => '/',
+							'files' => $list,
+							'uri' => $app->request->getReferrer(),
+							'path' => $app->request->getPath(),
+							'host' => $app->request->getHost()
+						));
 	});
 
 	$app->get('/:filepath+', function($filepath) use ($app) {
@@ -26,7 +33,14 @@
 		$ftp->cdup();
 		if ($ftp->isDir($real_filepath)) {
 			$list = $ftp->ls($real_filepath);
-			$app->render('index.php', array('title' => "/$filepath", 'files' => $list, 'uri' => $app->request->getReferrer()));
+			$app->render('index.php',
+						array(
+							'title' => "/$real_filepath",
+							'files' => $list,
+							'uri' => $app->request->getReferrer(),
+							'path' => $app->request->getPath(),
+							'host' => $app->request->getHost()
+						));
 		} else {
 			echo $ftp->get($real_filepath);
 		}

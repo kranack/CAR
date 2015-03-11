@@ -1,5 +1,6 @@
 <?php
 	include_once __DIR__.'/header.php';
+    $path = ($path=="/")? "" : $path;
 ?>
 		<div class="row">
 			<div class="twelve columns">
@@ -20,12 +21,12 @@
 		<div class="row">
 		<div class="eight columns"> <a href="<?php echo $uri; ?>"> . </a></div>
 			<div class="four columns"> </div>
-		</div>		
+		</div>
 		<?php
 
 			foreach($files as $file) {
 				echo '<div class="row"> ' .
-					 '<div class="eight columns"> ' . $file . '</div>' .
+					 '<div class="eight columns item"> <a href="'.$path.'/'.$file.'">' . $file . '</a></div>' .
                      '<div class="four columns"> ' .
                      '<div class="actions"> ' .
 					 '<span class="delete"><a href="#"><i class="fa fa-trash-o"></i></a></span>' .
