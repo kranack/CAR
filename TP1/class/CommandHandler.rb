@@ -1,6 +1,6 @@
 module FTPServerFunctions
 
-    COMMANDS = %w[user pass syst pwd list type feat cwd pasv mkd rmd dele cwd stor retr mode quit port site rnfr rnto cdup nlst]
+    COMMANDS = %w[user pass syst pwd list type feat cwd pasv mkd rmd dele cwd stor retr mode quit port site rnfr rnto cdup nlst size]
 
     # USER
     def user(msg)
@@ -119,7 +119,7 @@ module FTPServerFunctions
         elsif File.file? msg
             File::delete msg
         end
-        "200 OK, deleted #{msg}"
+        "250 command successful"
     end
 
     # MKD
@@ -171,5 +171,10 @@ module FTPServerFunctions
         response "150 Directory listing"
         send_data([`ls`.split("\n").join("\r\n") << "\r\n"])
         "226 Tranfer complete"
+    end
+
+    # SIZE
+    def size(msg)
+	"213 #{File.size(msg)}"
     end
 end
