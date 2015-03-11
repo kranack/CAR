@@ -106,11 +106,38 @@
 			$result = ftp_nb_get($this->conn, 'php://output', $filename, $mode);
 			while ($result == FTP_MOREDATA)
 				$result = ftp_nb_continue($this->conn);
-			$data = ob_get_contents();
-			ob_get_clean();
 			
-			if($result == FTP_FINISHED)
-				print $data;
+			if($result == FTP_FINISHED) {
+				$data = ob_get_contents();
+				ob_get_clean();
+				return $data;
+			}
+		}
+		
+		/**
+		 * Delete a file
+		 *
+		 * @param string $pathfile	file to delete
+		 *
+		 * @return bool status
+		 */
+		function delete($pathfile) {
+			assert($this->conn);
+
+			return ftp_delete($this->conn, $pathfile);
+		}
+
+		/**
+		 * Delete a dir
+		 *
+		 * @param string $pathfile	directory to delete
+		 *
+		 * @return bool status
+		 */
+		function deleteDir($pathfile) {
+			assert($this->conn);
+
+			return ftp_rmdir($this->conn, $pathfile);
 		}
 
 		/**
@@ -157,12 +184,26 @@
 		 *
 		 * check if a file is a directory
 		 *
-		 * @param string filepath	filepath to check
+		 * @param string $filepath	filepath to check
 		 *
 		 * @return boolean 
 		 */
 		function isDir($filepath) {
 			$root = ($this->cdup()) ? $this->pwd() : die('Erreur interne. Changement de répertoire impossible');
 			return is_dir("ftp://$this->login:$this->passwd@$this->hostname:$this->port$root/$filepath");
+		}
+		
+		/**
+		 * Get the Mime Type of a file
+		 *
+		 * @param string $filepath	filepath to check
+		 *
+		 * @return string 	mime-type
+		 */
+		function getMime($filepath) {
+			$root = ($this->cdup()) ? $this->pwd() : die('Erreur interne. Changement de répertoire impossible');
+			$finfo = new finfo(FILEINFO_MIME);
+			$mimetype = $finfo->file("ftp://$this->login:$this->passwd@$this->hostname:$this->port$root/$filepath");
+			return $mimetype;
 		}
 	}

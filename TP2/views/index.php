@@ -3,7 +3,7 @@
     $path = ($path=="/")? "" : $path;
     $tmp = explode('/',$path);
     $last = array_pop($tmp); // null if empty
-    $previous = (count($tmp)==1)? "/" : implode('/',$tmp);
+	$previous = (count($tmp)==1)? "/" : implode('/',$tmp);
 ?>
 
 		<div class="row">
@@ -29,8 +29,8 @@
 		<?php
 
 			foreach($files as $file) {
-				echo '<div class="row"> ' .
-					 '<div class="eight columns item"> <a href="'.$path.'/'.$file.'">' . $file . '</a></div>' .
+				echo '<div class="row item"> ' .
+					 '<div class="eight columns"><a href="'.$path.'/'.$file.'">' . $file . '</a></div>' .
                      '<div class="four columns"> ' .
                      '<div class="actions"> ' .
 					 '<span class="delete"><a href="#"><i class="fa fa-trash-o"></i></a></span>' .

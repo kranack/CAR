@@ -29,6 +29,7 @@
 	$app->get('/:filepath+', function($filepath) use ($app) {
 		$ftp = new FTP("localhost", "2121");
 		$ftp->connect();
+		$ftp->login();
 		$real_filepath = implode("/", $filepath);
 		$ftp->cdup();
 		if ($ftp->isDir($real_filepath)) {
@@ -42,6 +43,9 @@
 							'host' => $app->request->getHost()
 						));
 		} else {
-			echo $ftp->get($real_filepath);
+			//echo $ftp->getMime($real_filepath);
+			//print_r('<pre>');
+			print_r($ftp->get($real_filepath));
+			//print_r('</pre>');
 		}
 	});
