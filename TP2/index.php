@@ -18,7 +18,8 @@
 
 	$app = new Slim();
 	$app->config('debug', true);
-	
+	$app->config('templates.path', './views');
+
 	$log = $app->getLog();
 	$log->setEnabled(true);
 

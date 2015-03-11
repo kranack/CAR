@@ -9,12 +9,12 @@
      */    
 
 
-	$app->get('/', function() {
+	$app->get('/', function() use ($app) {
 		$ftp = new FTP("localhost", "2121");
 		$ftp->connect();
 		$isLogged = $ftp->login();
 		$ftp->cdup();
-		$list = $ftp->pwd();
+		$list = $ftp->ls($ftp->pwd());
 
 		$app->render('index.php', array('title' => '/', 'files' => $list));
 	});
