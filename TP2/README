@@ -1,8 +1,0 @@
-In a terminal :
-
-php phpunit.phar tests/FTPTest.php
-
-Generate Doc :
-
-./phpDocumentor.phar -d . -t docs --ignore "vendor/*" --template="responsive-twig"
-
