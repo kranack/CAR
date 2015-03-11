@@ -1,7 +1,11 @@
 <?php
 	include_once __DIR__.'/header.php';
     $path = ($path=="/")? "" : $path;
+    $tmp = explode('/',$path);
+    $last = array_pop($tmp); // null if empty
+    $previous = (count($tmp)==1)? "/" : implode('/',$tmp);
 ?>
+
 		<div class="row">
 			<div class="twelve columns">
 				<h1> List of files on FTP Server </h1>
@@ -19,7 +23,7 @@
         </div>
 		
 		<div class="row">
-		<div class="eight columns"> <a href="<?php echo $uri; ?>"> . </a></div>
+		<div class="eight columns"> <a href="<?php echo $previous; ?>"> .. </a></div>
 			<div class="four columns"> </div>
 		</div>
 		<?php

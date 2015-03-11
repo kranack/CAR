@@ -18,12 +18,12 @@
 
 		$app->render('index.php',
 					array(
-							'title' => '/',
-							'files' => $list,
-							'uri' => $app->request->getReferrer(),
-							'path' => $app->request->getPath(),
-							'host' => $app->request->getHost()
-						));
+						'title' => '/',
+						'files' => $list,
+						'uri' => $app->request->getReferrer(),
+						'path' => $app->request->getPath(),
+						'host' => $app->request->getHost()
+					));
 	});
 
 	$app->get('/:filepath+', function($filepath) use ($app) {
