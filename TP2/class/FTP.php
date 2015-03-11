@@ -17,17 +17,24 @@
 	class FTP {
 
 		/**
-		 * @var string $hostname
-		 * @var string $port
-		 * @var string $login
-		 * @var string $passwd
-		 * @var FTPStream $conn
+		 * @var string $hostname FTP Server hostname
 		 */
 		private $hostname = 'localhost';
+		/**
+		 * @var string $port FTP Server port
+		 */
 		private $port = '21';
+		/**
+		 * @var string $login FTP Server's username
+		 */
 		private $login;
+		/**
+		 * @var string $passwd FTP Server's password
+		 */
 		private $passwd;
-
+		/**
+		 * @var FTPStream|null $conn FTP Connection handler
+		 */
 		private $conn;
 		
 		/**

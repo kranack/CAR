@@ -8,18 +8,25 @@
         </div>
 
         <div class="row">
-            <div class="two-thirds column"></div>
+			<div class="two-thirds column">
+				<a href="/" alt="root"> Return to root </a>
+			</div>
             <div class="one-third column">
                 <div id="global-actions">
                     <span class="glyphicons glyphicons-circle-plus"></span>
                 </div>
             </div>
         </div>
-
+		
+		<div class="row">
+		<div class="eight columns"> <a href="<?php echo $uri; ?>"> . </a></div>
+			<div class="four columns"> </div>
+		</div>		
 		<?php
+
 			foreach($files as $file) {
 				echo '<div class="row"> ' .
-					 '<div class="eight columns"> '. $file . ' </div>' .
+					 '<div class="eight columns"> ' . $file . '</div>' .
                      '<div class="four columns"> ' .
                      '<div class="actions"> ' .
                      '<span class="delete"><span class="glyphicons glyphicons-circle-remove"></span></span>' .
@@ -27,7 +34,5 @@
                      ' </div>' .
 					 ' </div>';
 			}
-		?>
 
-<?php
-	include_once __DIR__.'/footer.php';
+		include_once __DIR__.'/footer.php';
