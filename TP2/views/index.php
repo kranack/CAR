@@ -13,7 +13,6 @@
 			</div>
             <div class="one-third column">
                 <div id="global-actions">
-                    <span class="glyphicons glyphicons-circle-plus"></span>
                 </div>
             </div>
         </div>
@@ -29,7 +28,7 @@
 					 '<div class="eight columns"> ' . $file . '</div>' .
                      '<div class="four columns"> ' .
                      '<div class="actions"> ' .
-                     '<span class="delete"><span class="glyphicons glyphicons-circle-remove"></span></span>' .
+					 '<span class="delete"><a href="#"><i class="fa fa-trash-o"></i></a></span>' .
                      ' </div>' .
                      ' </div>' .
 					 ' </div>';
