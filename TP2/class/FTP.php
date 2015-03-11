@@ -126,8 +126,8 @@
 		 * @return string[]	files in the current directory
 		 */
 		function ls() {
-			//return ftp_nlist($this->conn, $this->pwd());
-			return ftp_rawlist($this->conn, $this->pwd());
+			return ftp_nlist($this->conn, $this->pwd());
+			//return ftp_rawlist($this->conn, $this->pwd());
 		}
 		
 		/**

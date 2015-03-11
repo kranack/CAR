@@ -14,7 +14,7 @@ Introduction
 
 Architecture
 ************
-	L'application est organisé selon la structure MVC - Modele Vue Controleur - ce qui permet
+	L'application est organisée selon la structure MVC - Modele Vue Controleur - ce qui permet
 	un maintien simple et efficace, compréhensible et universel.
 
 Usage

@@ -1,6 +1,6 @@
 module FTPServerFunctions
 
-    COMMANDS = %w[user pass syst pwd list type feat cwd pasv mkd rmd dele cwd stor retr mode quit port site rnfr rnto cdup]
+    COMMANDS = %w[user pass syst pwd list type feat cwd pasv mkd rmd dele cwd stor retr mode quit port site rnfr rnto cdup nlst]
 
     # USER
     def user(msg)
@@ -164,5 +164,12 @@ module FTPServerFunctions
     def cdup(msg)
 	Dir.chdir(@params.root)
 	"250 Directory successfully changed"
+    end
+
+    # NLST
+    def nlst(msg)
+        response "150 Directory listing"
+        send_data([`ls`.split("\n").join("\r\n") << "\r\n"])
+        "226 Tranfer complete"
     end
 end
