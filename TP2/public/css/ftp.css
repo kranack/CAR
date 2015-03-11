@@ -1,8 +1,33 @@
-html, body {	height: 100%;	}
-body {	background: linear-gradient(to right,#868B92,#E0E7F3,#E0E7F3,#E0E7F3,#E0E7F3,#868B92);	}
-a { color: black;}
+#global_actions {
+	padding: 1%;
+}
 
-.container {	height: 100%;	}
-.item {	background: #868B92; border-radius: 5px; border: 1px solid;
-		padding-left: 1%; margin-bottom: 1%;	}
-.item:hover { cursor: pointer;	}
+#global_actions a:first-child {
+	color: green;	
+}
+
+#file_content {
+	background: #ccc;
+	border-radius: 10px;
+	width: 80%;
+	padding: 1.5%;
+	margin: 1% 2% 1% 2%;
+}
+
+	#file_content .row {
+		padding-bottom: .5%;
+	}
+
+		#file_content .row a:hover {
+			font-weight: 550;
+			text-decoration: none;
+		}
+
+	#file_content .actions {
+		float: right;
+		margin-right: 5%;
+	}
+
+		#file_content .actions a:first-child {
+			color: red;
+		}

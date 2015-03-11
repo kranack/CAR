@@ -148,8 +148,26 @@
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_delete" title="delete :: Delete a file">
+            <span class="description">Delete a file</span><pre>delete</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_deleteDir" title="deleteDir :: Delete a dir">
+            <span class="description">Delete a dir</span><pre>deleteDir</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_get" title="get :: Download a file">
             <span class="description">Download a file</span><pre>get</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getMime" title="getMime :: Get the Mime Type of a file">
+            <span class="description">Get the Mime Type of a file</span><pre>getMime</pre>
         </a>
     </li>
 
@@ -181,11 +199,11 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -403,6 +421,60 @@ Only support IPv4 connection</p>
                             </div>
 
                         </div>
+                                            <a id="method_delete"></a>
+                        <div class="element clickable method public  method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+                            <h2>Delete a file</h2>
+                            <pre>delete(string $pathfile) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pathfile</h4>
+                                                <code>string</code><p><p>file to delete</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>status</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_deleteDir"></a>
+                        <div class="element clickable method public  method_deleteDir" data-toggle="collapse" data-target=".method_deleteDir .collapse">
+                            <h2>Delete a dir</h2>
+                            <pre>deleteDir(string $pathfile) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pathfile</h4>
+                                                <code>string</code><p><p>directory to delete</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p><p>status</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_get"></a>
                         <div class="element clickable method public  method_get" data-toggle="collapse" data-target=".method_get .collapse">
                             <h2>Download a file</h2>
@@ -439,10 +511,37 @@ Only support IPv4 connection</p>
                             </div>
 
                         </div>
+                                            <a id="method_getMime"></a>
+                        <div class="element clickable method public  method_getMime" data-toggle="collapse" data-target=".method_getMime .collapse">
+                            <h2>Get the Mime Type of a file</h2>
+                            <pre>getMime(string $filepath) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filepath</h4>
+                                                <code>string</code><p><p>filepath to check</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>mime-type</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_isDir"></a>
                         <div class="element clickable method public  method_isDir" data-toggle="collapse" data-target=".method_isDir .collapse">
                             <h2>Is it a directory ?</h2>
-                            <pre>isDir( $filepath) : boolean</pre>
+                            <pre>isDir(string $filepath) : boolean</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -457,7 +556,7 @@ Only support IPv4 connection</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$filepath</h4>
-                                                <code></code><p></p>
+                                                <code>string</code><p><p>filepath to check</p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -718,7 +817,7 @@ Only support IPv4 connection</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 11 Mar 2015 11:10:08 +0100.<br/>
+            generated on Wed, 11 Mar 2015 23:40:04 +0100.<br/>
     </footer>
     </body>
 </html>
