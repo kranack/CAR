@@ -14,18 +14,21 @@
 
         <div class="row">
 			<div class="two-thirds column">
-				<a href="/" alt="root"> Return to root </a>
 			</div>
             <div class="one-third column">
-                <div id="global-actions">
+				<div id="global_actions">
+					<a href="#" alt="add file"><i class="fa fa-plus"></i></a>
                 </div>
             </div>
         </div>
 		
-		<div class="row">
-		<div class="eight columns"> <a href="<?php echo $previous; ?>"> .. </a></div>
-			<div class="four columns"> </div>
-		</div>
+		<div id="file_content">		
+
+			<div class="row">
+				<div class="eight columns"> <a href="<?php echo $previous; ?>"> .. </a></div>
+				<div class="four columns"> </div>
+			</div>
+
 		<?php
 
 			foreach($files as $file) {
@@ -38,5 +41,7 @@
                      ' </div>' .
 					 ' </div>';
 			}
-
+		?>
+		</div>
+		<?php
 		include_once __DIR__.'/footer.php';
