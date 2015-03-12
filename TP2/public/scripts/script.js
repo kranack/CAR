@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	
+	$('#addButton').click(function () {
+		$('#addFile').modal();
+	});
 
 	/* Delete a file */
 	$( ".delete" ).click(function(){
@@ -15,7 +19,7 @@ $(document).ready(function(){
 			url: "http://localhost" + filepath + "/" + filename,
 			data: {},
 			success: function(data) {
-				window.location.href = filepath;
+				//window.location.href = filepath;
 			}
 		})
 	});

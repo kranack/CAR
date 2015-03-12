@@ -17,7 +17,8 @@
 			</div>
             <div class="one-third column">
 				<div id="global_actions">
-					<a href="#" alt="add file"><i class="fa fa-plus"></i></a>
+					<!--<a href="#" alt="add file"><i class="fa fa-plus"></i></a>-->
+					<button id="addButton" type="button" data-toggle="modal" data-target="addFile">Add File</button>
                 </div>
             </div>
         </div>
@@ -42,6 +43,22 @@
 					 ' </div>';
 			}
 		?>
+		</div>
+
+		<div class="modal fade" id="addFile" tabindex="-1" role="dialog" aria-labelledby="addFileLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="addFileLabel"> Add File </h4>
+					</div>
+					<div class="modal-body">
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
 		</div>
 		<?php
 		include_once __DIR__.'/footer.php';
