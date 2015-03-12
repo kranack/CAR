@@ -203,7 +203,7 @@
 		function getMime($filepath) {
 			$root = ($this->cdup()) ? $this->pwd() : die('Erreur interne. Changement de répertoire impossible');
 			$finfo = new finfo(FILEINFO_MIME);
-			$mimetype = $finfo->file("ftp://$this->login:$this->passwd@$this->hostname:$this->port$root/$filepath");
+			$mimetype = $finfo->file("ftp://$this->hostname:$this->port$root/$filepath");
 			return $mimetype;
 		}
 	}

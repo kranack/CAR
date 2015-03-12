@@ -29,5 +29,6 @@
 	}
 
 		#file_content .actions a:first-child {
-			color: red;
+			color: #ff1111;
+			font-weight: 600;
 		}

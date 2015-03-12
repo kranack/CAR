@@ -43,7 +43,7 @@
 							'host' => $app->request->getHost()
 						));
 		} else {
-			//echo $ftp->getMime($real_filepath);
+			//print_r($ftp->getMime($real_filepath));
 			//print_r('<pre>');
 			print_r($ftp->get($real_filepath));
 			//print_r('</pre>');

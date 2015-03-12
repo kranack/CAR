@@ -36,7 +36,7 @@
 					 '<div class="eight columns"><a href="'.$path.'/'.$file.'">' . $file . '</a></div>' .
                      '<div class="four columns"> ' .
                      '<div class="actions"> ' .
-					 '<span class="delete"><a href="#"><i class="fa fa-trash-o"></i></a></span>' .
+					 '<span class="delete"><a href="#"><i class="fa fa-times"></i></a></span>' .
                      ' </div>' .
                      ' </div>' .
 					 ' </div>';
