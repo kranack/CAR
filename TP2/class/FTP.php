@@ -115,6 +115,21 @@
 		}
 		
 		/**
+		 * Create empty file
+		 *
+		 * @param string $pathfile	file to create
+		 *
+		 * @return bool status
+		 */
+
+		function touch($pathfile) {
+			assert($this->conn);
+			$tmp = tmpfile();
+
+			return ftp_fput($this->conn, $pathfile, $tmp, FTP_ASCII);
+		}
+
+		/**
 		 * Delete a file
 		 *
 		 * @param string $pathfile	file to delete

@@ -28,5 +28,5 @@ Usage
 
 		* Generation de la documentation :
 	(Dans un terminal)
-	./phpDocumentor.phar -d . -t docs --ignore "vendor/*" --template="responsive-twig"
+	./phpDocumentor.phar -d . -t ../doc --ignore "vendor/*" --template="responsive-twig"
 

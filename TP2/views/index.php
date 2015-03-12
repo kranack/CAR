@@ -33,6 +33,7 @@
 		<?php
 
 			foreach($files as $file) {
+				if (str_replace(' ', '', $file) != "") {
 				echo '<div class="row item"> ' .
 					 '<div class="eight columns"><a href="'.$path.'/'.$file.'">' . $file . '</a></div>' .
                      '<div class="four columns"> ' .
@@ -41,6 +42,7 @@
                      ' </div>' .
                      ' </div>' .
 					 ' </div>';
+				}
 			}
 		?>
 		</div>
@@ -53,8 +55,13 @@
 						<h4 class="modal-title" id="addFileLabel"> Add File </h4>
 					</div>
 					<div class="modal-body">
+						<form id="addFileForm" action="PUT" target="#">
+							<label for="filename">Name</label>
+							<input type="text" name="filename">
+						</form>
 					</div>
 					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Send</button>
 						<button type="button" data-dismiss="modal">Close</button>
 					</div>
 				</div>
