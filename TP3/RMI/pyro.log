@@ -1,0 +1,1052 @@
+[2015-04-02 11:16:48.872,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:16:48.936,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:16:48.937,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:16:48.938,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:16:48.938,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:16:48.939,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:16:48.939,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:16:48.940,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:16:48.940,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:16:48.940,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:16:48.941,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:16:48.942,Pyro4.core,DEBUG] connecting to PYRO:obj_a67ab21745a848b1a9a9974945a124d7@localhost:55248
+[2015-04-02 11:16:48.949,Pyro4.core,ERROR] cannot connect: [Errno 111] Connection refused
+[2015-04-02 11:16:48.956,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:17:05.836,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:17:05.893,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:17:24.064,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:17:24.124,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:17:28.282,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:17:28.341,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:17:28.342,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:17:28.342,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:17:28.342,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:17:28.343,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:17:28.344,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:17:28.344,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:17:28.344,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:17:28.345,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:17:28.345,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:17:28.346,Pyro4.core,DEBUG] connecting to PYRO:obj_a67ab21745a848b1a9a9974945a124d7@localhost:55248
+[2015-04-02 11:17:28.352,Pyro4.core,ERROR] cannot connect: [Errno 111] Connection refused
+[2015-04-02 11:17:28.359,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:20:42.947,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:20:43.007,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:20:43.008,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:20:43.008,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:20:43.008,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:20:43.009,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:20:43.009,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:20:43.010,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:20:43.010,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:20:43.010,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:20:43.011,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:20:43.012,Pyro4.core,DEBUG] connecting to PYRO:obj_0f7a1bede04f4baf8e55d0cb48c44f27@localhost:34320
+[2015-04-02 11:20:43.023,Pyro4.core,ERROR] cannot connect: [Errno 111] Connection refused
+[2015-04-02 11:20:43.029,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:21:21.907,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:21:21.965,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:21:21.965,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:21:21.966,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:21:21.966,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:21:21.967,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:21:21.967,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:21:21.968,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:21:21.968,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:21:21.968,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:21:21.969,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:21:21.975,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:21:39.333,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:21:39.473,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:21:39.474,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:21:39.474,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:21:39.474,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:21:39.476,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:21:39.476,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:21:39.477,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:21:39.477,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:21:39.477,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:21:39.478,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:21:39.479,Pyro4.core,DEBUG] connecting to PYRO:obj_0f7a1bede04f4baf8e55d0cb48c44f27@localhost:34320
+[2015-04-02 11:21:39.489,Pyro4.core,ERROR] cannot connect: [Errno 111] Connection refused
+[2015-04-02 11:21:39.497,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:25:20.325,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:25:20.392,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:25:20.393,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:25:20.393,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:25:20.393,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:25:20.394,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:25:20.394,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:25:20.395,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:25:20.395,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:25:20.396,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:25:20.396,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:25:20.397,Pyro4.core,DEBUG] connecting to PYRO:obj_012f056eea4549f1858e26b50523c0f4@localhost:49924
+[2015-04-02 11:25:20.407,Pyro4.core,ERROR] cannot connect: [Errno 111] Connection refused
+[2015-04-02 11:25:20.417,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:27:28.366,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:27:28.523,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:27:28.524,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:27:28.524,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:27:28.524,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:27:28.525,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:27:28.525,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:27:28.526,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:27:28.527,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:27:28.527,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:27:28.527,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:27:28.535,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:27:33.067,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:27:33.133,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:27:33.134,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:27:33.134,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:27:33.135,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:27:33.136,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:27:33.136,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:27:33.137,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:27:33.137,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:27:33.137,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:27:33.138,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:27:33.154,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:34:54.318,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:34:54.462,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:34:54.463,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:34:54.463,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:34:54.463,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:34:54.465,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:34:54.465,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:34:54.466,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:34:54.466,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:34:54.466,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:34:54.466,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:34:54.467,Pyro4.core,DEBUG] connecting to PYRO:obj_0e3e1852f61b44c49d38cd5b8466dce3@localhost:57092
+[2015-04-02 11:34:54.478,Pyro4.core,ERROR] cannot connect: [Errno 111] Connection refused
+[2015-04-02 11:34:54.486,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:34:57.573,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:34:57.639,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:34:57.640,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:34:57.640,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:34:57.640,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:34:57.641,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:34:57.641,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:34:57.642,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:34:57.642,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:34:57.643,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:34:57.643,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:34:57.644,Pyro4.core,DEBUG] connecting to PYRO:obj_0e3e1852f61b44c49d38cd5b8466dce3@localhost:57092
+[2015-04-02 11:34:57.651,Pyro4.core,ERROR] cannot connect: [Errno 111] Connection refused
+[2015-04-02 11:34:57.658,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:35:08.962,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:35:09.026,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:35:09.033,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:09.033,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:09.034,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:09.035,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:09.035,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:09.036,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:35:09.036,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:35:09.036,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:35:09.036,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:35:09.037,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:35:18.311,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:35:18.375,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:35:18.382,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:18.382,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:18.382,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:18.383,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:18.384,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:18.385,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:35:18.385,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:35:18.385,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:35:18.385,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:35:18.386,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:35:27.003,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:35:27.066,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:35:27.073,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:27.073,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:27.073,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:27.074,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:27.074,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:27.075,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:35:27.075,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:35:27.075,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:35:27.075,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:35:27.076,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:35:39.123,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:35:39.183,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:35:39.190,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:39.190,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:39.190,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:39.191,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:39.191,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:39.192,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:35:39.192,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:35:39.192,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:35:39.193,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:35:39.194,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:35:44.073,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:35:44.137,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:35:44.144,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:44.144,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:44.144,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:44.145,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:44.146,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:44.147,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:35:44.147,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:35:44.147,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:35:44.147,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:35:44.148,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:35:45.762,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:35:45.820,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:35:45.826,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:45.826,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:45.826,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:45.827,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:45.828,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:45.829,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:35:45.829,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:35:45.829,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:35:45.829,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:35:45.830,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:35:46.589,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:35:46.648,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:35:46.654,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:46.654,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:46.655,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:46.656,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:46.656,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:46.657,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:35:46.657,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:35:46.657,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:35:46.657,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:35:46.658,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:35:47.234,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:35:47.288,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:35:47.295,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:47.295,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:47.295,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:47.297,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:47.297,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:47.298,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:35:47.298,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:35:47.298,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:35:47.298,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:35:47.299,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:35:49.846,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:35:49.907,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:35:49.915,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:49.915,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:49.915,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:49.916,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:35:49.917,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:35:49.918,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:35:49.918,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:35:49.918,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:35:49.918,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:35:49.919,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:36:18.807,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:36:18.867,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:36:18.874,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:36:18.874,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:36:18.874,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:36:18.875,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:36:18.875,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:36:18.876,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:36:18.876,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:36:18.876,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:36:18.877,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:36:18.878,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:36:20.849,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:36:20.908,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:36:20.914,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:36:20.914,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:36:20.914,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:36:20.916,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:36:20.916,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:36:20.916,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:36:20.917,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:36:20.917,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:36:20.917,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:36:20.918,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:36:39.661,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:36:39.719,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:36:39.726,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:36:39.726,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:36:39.727,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:36:39.728,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:36:39.728,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:36:39.729,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:36:39.729,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:36:39.729,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:36:39.730,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:36:39.730,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:37:19.541,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:37:19.601,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:37:19.608,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:37:19.608,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:37:19.609,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:37:19.610,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:37:19.610,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:37:19.611,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:37:19.611,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:37:19.611,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:37:19.612,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:37:19.613,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:37:33.537,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:37:33.593,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:37:33.600,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:37:33.600,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:37:33.600,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:37:33.601,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:37:33.601,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:37:33.602,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:37:33.602,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:37:33.602,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:37:33.603,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:37:33.603,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:38:19.662,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:38:19.722,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:38:19.729,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:38:19.729,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:38:19.729,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:38:19.730,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:38:19.730,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:38:19.731,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:38:19.731,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:38:19.731,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:38:19.732,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:38:19.733,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:38:28.166,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:38:28.227,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:38:28.234,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:38:28.235,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:38:28.235,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:38:28.236,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:38:28.236,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:38:28.237,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:38:28.237,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:38:28.237,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:38:28.238,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:38:28.239,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:38:52.344,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:38:52.402,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:38:52.409,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:38:52.409,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:38:52.409,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:38:52.410,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:38:52.410,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:38:52.411,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:38:52.411,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:38:52.411,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:38:52.412,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:38:52.413,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:40:55.900,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:40:55.959,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:40:55.966,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:40:55.966,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:40:55.966,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:40:55.968,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:40:55.968,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:40:55.969,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:40:55.969,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:40:55.969,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:40:55.969,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:40:55.970,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:41:03.963,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:41:04.108,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:41:04.109,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:41:04.109,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:41:04.109,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:41:04.111,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:41:04.111,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:41:04.112,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:41:04.112,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:41:04.112,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:41:04.112,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:41:04.113,Pyro4.core,DEBUG] connecting to PYRO:obj_50fc90552ab14a38b33b2e44335b9646@localhost:41336
+[2015-04-02 11:41:04.123,Pyro4.core,DEBUG] connected to PYRO:obj_50fc90552ab14a38b33b2e44335b9646@localhost:41336
+[2015-04-02 11:41:04.124,Pyro4.core,DEBUG] getting metadata for object obj_50fc90552ab14a38b33b2e44335b9646
+[2015-04-02 11:41:04.124,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:41:04.124,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:41:04.125,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:41:04.131,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:41:04.132,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:41:23.026,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:41:23.089,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:41:23.090,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:41:23.090,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:41:23.090,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:41:23.091,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:41:23.092,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:41:23.093,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:41:23.093,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:41:23.093,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:41:23.093,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:41:23.094,Pyro4.core,DEBUG] connecting to PYRO:obj_50fc90552ab14a38b33b2e44335b9646@localhost:41336
+[2015-04-02 11:41:23.101,Pyro4.core,DEBUG] connected to PYRO:obj_50fc90552ab14a38b33b2e44335b9646@localhost:41336
+[2015-04-02 11:41:23.101,Pyro4.core,DEBUG] getting metadata for object obj_50fc90552ab14a38b33b2e44335b9646
+[2015-04-02 11:41:23.102,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:41:23.102,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:41:23.102,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:41:23.126,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:41:23.126,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:42:01.536,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:42:01.597,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:42:01.598,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:42:01.598,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:42:01.598,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:42:01.599,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:42:01.600,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:42:01.600,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:42:01.601,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:42:01.601,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:42:01.601,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:42:01.602,Pyro4.core,DEBUG] getting metadata for object obj_50fc90552ab14a38b33b2e44335b9646
+[2015-04-02 11:42:01.602,Pyro4.core,DEBUG] connecting to PYRO:obj_50fc90552ab14a38b33b2e44335b9646@localhost:41336
+[2015-04-02 11:42:01.610,Pyro4.core,DEBUG] connected to PYRO:obj_50fc90552ab14a38b33b2e44335b9646@localhost:41336
+[2015-04-02 11:42:01.610,Pyro4.core,DEBUG] getting metadata for object obj_50fc90552ab14a38b33b2e44335b9646
+[2015-04-02 11:42:01.611,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:42:01.612,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:42:01.612,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:42:01.618,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:42:01.619,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:42:07.487,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:42:07.547,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:42:07.547,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:42:07.548,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:42:07.548,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:42:07.549,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:42:07.549,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:42:07.550,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:42:07.550,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:42:07.550,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:42:07.550,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:42:07.551,Pyro4.core,DEBUG] getting metadata for object obj_50fc90552ab14a38b33b2e44335b9646
+[2015-04-02 11:42:07.551,Pyro4.core,DEBUG] connecting to PYRO:obj_50fc90552ab14a38b33b2e44335b9646@localhost:41336
+[2015-04-02 11:42:07.558,Pyro4.core,DEBUG] connected to PYRO:obj_50fc90552ab14a38b33b2e44335b9646@localhost:41336
+[2015-04-02 11:42:07.558,Pyro4.core,DEBUG] getting metadata for object obj_50fc90552ab14a38b33b2e44335b9646
+[2015-04-02 11:42:07.559,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:42:07.559,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:42:07.559,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:42:07.566,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:42:07.567,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:42:54.307,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:42:54.370,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:42:54.377,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:42:54.377,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:42:54.377,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:42:54.378,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:42:54.378,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:42:54.379,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:42:54.379,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:42:54.380,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:42:54.380,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:42:54.381,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:43:00.231,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:43:00.376,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:43:00.377,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:43:00.377,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:43:00.377,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:43:00.378,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:43:00.379,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:43:00.379,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:43:00.379,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:43:00.380,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:43:00.380,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:43:00.381,Pyro4.core,DEBUG] getting metadata for object obj_a6407dbc4340449ba62c8f0528c84533
+[2015-04-02 11:43:00.381,Pyro4.core,DEBUG] connecting to PYRO:obj_a6407dbc4340449ba62c8f0528c84533@localhost:51693
+[2015-04-02 11:43:00.391,Pyro4.core,DEBUG] connected to PYRO:obj_a6407dbc4340449ba62c8f0528c84533@localhost:51693
+[2015-04-02 11:43:00.391,Pyro4.core,DEBUG] getting metadata for object obj_a6407dbc4340449ba62c8f0528c84533
+[2015-04-02 11:43:00.392,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:43:00.392,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:43:00.392,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:43:00.393,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:43:00.393,Pyro4.core,DEBUG] getting metadata for object obj_ce7d320769fa4677bd6ac925598d2238
+[2015-04-02 11:43:00.393,Pyro4.core,DEBUG] connecting to PYRO:obj_ce7d320769fa4677bd6ac925598d2238@localhost:58386
+[2015-04-02 11:43:00.394,Pyro4.core,DEBUG] connected to PYRO:obj_ce7d320769fa4677bd6ac925598d2238@localhost:58386
+[2015-04-02 11:43:00.394,Pyro4.core,DEBUG] getting metadata for object obj_ce7d320769fa4677bd6ac925598d2238
+[2015-04-02 11:43:00.395,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:43:00.395,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:43:00.395,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:43:00.396,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:43:00.396,Pyro4.core,DEBUG] getting metadata for object obj_bd305adf3c7644ccad731edbb213e166
+[2015-04-02 11:43:00.396,Pyro4.core,DEBUG] connecting to PYRO:obj_bd305adf3c7644ccad731edbb213e166@localhost:55197
+[2015-04-02 11:43:00.397,Pyro4.core,DEBUG] connected to PYRO:obj_bd305adf3c7644ccad731edbb213e166@localhost:55197
+[2015-04-02 11:43:00.397,Pyro4.core,DEBUG] getting metadata for object obj_bd305adf3c7644ccad731edbb213e166
+[2015-04-02 11:43:00.397,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:43:00.397,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:43:00.397,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:43:00.398,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:43:00.398,Pyro4.core,DEBUG] getting metadata for object obj_e347dd4bc4004315b7eb329dce38bb52
+[2015-04-02 11:43:00.398,Pyro4.core,DEBUG] connecting to PYRO:obj_e347dd4bc4004315b7eb329dce38bb52@localhost:39657
+[2015-04-02 11:43:00.399,Pyro4.core,DEBUG] connected to PYRO:obj_e347dd4bc4004315b7eb329dce38bb52@localhost:39657
+[2015-04-02 11:43:00.399,Pyro4.core,DEBUG] getting metadata for object obj_e347dd4bc4004315b7eb329dce38bb52
+[2015-04-02 11:43:00.400,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:43:00.400,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:43:00.400,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:43:00.401,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:43:00.401,Pyro4.core,DEBUG] getting metadata for object obj_83d35e19bf3947f5b7af71d1243d5a79
+[2015-04-02 11:43:00.401,Pyro4.core,DEBUG] connecting to PYRO:obj_83d35e19bf3947f5b7af71d1243d5a79@localhost:59525
+[2015-04-02 11:43:00.402,Pyro4.core,DEBUG] connected to PYRO:obj_83d35e19bf3947f5b7af71d1243d5a79@localhost:59525
+[2015-04-02 11:43:00.402,Pyro4.core,DEBUG] getting metadata for object obj_83d35e19bf3947f5b7af71d1243d5a79
+[2015-04-02 11:43:00.403,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:43:00.403,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:43:00.403,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:43:00.404,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:43:00.404,Pyro4.core,DEBUG] getting metadata for object obj_0a4dcf00d27845d28ebb0019fe71990a
+[2015-04-02 11:43:00.404,Pyro4.core,DEBUG] connecting to PYRO:obj_0a4dcf00d27845d28ebb0019fe71990a@localhost:38224
+[2015-04-02 11:43:00.405,Pyro4.core,DEBUG] connected to PYRO:obj_0a4dcf00d27845d28ebb0019fe71990a@localhost:38224
+[2015-04-02 11:43:00.405,Pyro4.core,DEBUG] getting metadata for object obj_0a4dcf00d27845d28ebb0019fe71990a
+[2015-04-02 11:43:00.406,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:43:00.406,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:43:00.406,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:43:00.407,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:43:00.407,Pyro4.core,DEBUG] getting metadata for object obj_8ad525b2f897491083a1301c7856e2ad
+[2015-04-02 11:43:00.407,Pyro4.core,DEBUG] connecting to PYRO:obj_8ad525b2f897491083a1301c7856e2ad@localhost:55384
+[2015-04-02 11:43:00.408,Pyro4.core,DEBUG] connected to PYRO:obj_8ad525b2f897491083a1301c7856e2ad@localhost:55384
+[2015-04-02 11:43:00.408,Pyro4.core,DEBUG] getting metadata for object obj_8ad525b2f897491083a1301c7856e2ad
+[2015-04-02 11:43:00.409,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:43:00.409,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:43:00.409,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:43:00.410,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:43:00.410,Pyro4.core,DEBUG] getting metadata for object obj_d6c26e89a58b4045a8091fa879acdeff
+[2015-04-02 11:43:00.410,Pyro4.core,DEBUG] connecting to PYRO:obj_d6c26e89a58b4045a8091fa879acdeff@localhost:47951
+[2015-04-02 11:43:00.411,Pyro4.core,DEBUG] connected to PYRO:obj_d6c26e89a58b4045a8091fa879acdeff@localhost:47951
+[2015-04-02 11:43:00.411,Pyro4.core,DEBUG] getting metadata for object obj_d6c26e89a58b4045a8091fa879acdeff
+[2015-04-02 11:43:00.412,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:43:00.412,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:43:00.412,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:43:00.413,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:43:00.413,Pyro4.core,DEBUG] getting metadata for object obj_f4acdcec9ecf4473a1b5089527294d97
+[2015-04-02 11:43:00.413,Pyro4.core,DEBUG] connecting to PYRO:obj_f4acdcec9ecf4473a1b5089527294d97@localhost:54044
+[2015-04-02 11:43:00.414,Pyro4.core,DEBUG] connected to PYRO:obj_f4acdcec9ecf4473a1b5089527294d97@localhost:54044
+[2015-04-02 11:43:00.414,Pyro4.core,DEBUG] getting metadata for object obj_f4acdcec9ecf4473a1b5089527294d97
+[2015-04-02 11:43:00.415,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:43:00.415,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:43:00.415,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:43:00.416,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:43:00.416,Pyro4.core,DEBUG] getting metadata for object obj_9c703df8dfc34b6a99629603eb00f54c
+[2015-04-02 11:43:00.416,Pyro4.core,DEBUG] connecting to PYRO:obj_9c703df8dfc34b6a99629603eb00f54c@localhost:32879
+[2015-04-02 11:43:00.417,Pyro4.core,DEBUG] connected to PYRO:obj_9c703df8dfc34b6a99629603eb00f54c@localhost:32879
+[2015-04-02 11:43:00.417,Pyro4.core,DEBUG] getting metadata for object obj_9c703df8dfc34b6a99629603eb00f54c
+[2015-04-02 11:43:00.417,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:43:00.417,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:43:00.417,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:43:00.429,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:43:00.431,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:44:50.859,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:44:50.936,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:44:50.937,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:44:50.937,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:44:50.937,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:44:50.939,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:44:50.939,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:44:50.940,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:44:50.940,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:44:50.940,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:44:50.941,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:44:50.942,Pyro4.core,DEBUG] getting metadata for object obj_a6407dbc4340449ba62c8f0528c84533
+[2015-04-02 11:44:50.942,Pyro4.core,DEBUG] connecting to PYRO:obj_a6407dbc4340449ba62c8f0528c84533@localhost:51693
+[2015-04-02 11:44:50.949,Pyro4.core,DEBUG] connected to PYRO:obj_a6407dbc4340449ba62c8f0528c84533@localhost:51693
+[2015-04-02 11:44:50.950,Pyro4.core,DEBUG] getting metadata for object obj_a6407dbc4340449ba62c8f0528c84533
+[2015-04-02 11:44:50.950,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:44:50.951,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:44:50.951,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:44:50.952,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:44:50.952,Pyro4.core,DEBUG] getting metadata for object obj_ce7d320769fa4677bd6ac925598d2238
+[2015-04-02 11:44:50.952,Pyro4.core,DEBUG] connecting to PYRO:obj_ce7d320769fa4677bd6ac925598d2238@localhost:58386
+[2015-04-02 11:44:50.953,Pyro4.core,DEBUG] connected to PYRO:obj_ce7d320769fa4677bd6ac925598d2238@localhost:58386
+[2015-04-02 11:44:50.953,Pyro4.core,DEBUG] getting metadata for object obj_ce7d320769fa4677bd6ac925598d2238
+[2015-04-02 11:44:50.954,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:44:50.954,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:44:50.954,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:44:50.955,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:44:50.956,Pyro4.core,DEBUG] getting metadata for object obj_bd305adf3c7644ccad731edbb213e166
+[2015-04-02 11:44:50.956,Pyro4.core,DEBUG] connecting to PYRO:obj_bd305adf3c7644ccad731edbb213e166@localhost:55197
+[2015-04-02 11:44:50.957,Pyro4.core,DEBUG] connected to PYRO:obj_bd305adf3c7644ccad731edbb213e166@localhost:55197
+[2015-04-02 11:44:50.957,Pyro4.core,DEBUG] getting metadata for object obj_bd305adf3c7644ccad731edbb213e166
+[2015-04-02 11:44:50.957,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:44:50.958,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:44:50.958,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:44:50.959,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:44:50.959,Pyro4.core,DEBUG] getting metadata for object obj_e347dd4bc4004315b7eb329dce38bb52
+[2015-04-02 11:44:50.959,Pyro4.core,DEBUG] connecting to PYRO:obj_e347dd4bc4004315b7eb329dce38bb52@localhost:39657
+[2015-04-02 11:44:50.960,Pyro4.core,DEBUG] connected to PYRO:obj_e347dd4bc4004315b7eb329dce38bb52@localhost:39657
+[2015-04-02 11:44:50.960,Pyro4.core,DEBUG] getting metadata for object obj_e347dd4bc4004315b7eb329dce38bb52
+[2015-04-02 11:44:50.961,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:44:50.961,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:44:50.961,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:44:50.962,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:44:50.962,Pyro4.core,DEBUG] getting metadata for object obj_83d35e19bf3947f5b7af71d1243d5a79
+[2015-04-02 11:44:50.963,Pyro4.core,DEBUG] connecting to PYRO:obj_83d35e19bf3947f5b7af71d1243d5a79@localhost:59525
+[2015-04-02 11:44:50.964,Pyro4.core,DEBUG] connected to PYRO:obj_83d35e19bf3947f5b7af71d1243d5a79@localhost:59525
+[2015-04-02 11:44:50.964,Pyro4.core,DEBUG] getting metadata for object obj_83d35e19bf3947f5b7af71d1243d5a79
+[2015-04-02 11:44:50.965,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:44:50.965,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:44:50.965,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:44:50.966,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:44:50.966,Pyro4.core,DEBUG] getting metadata for object obj_0a4dcf00d27845d28ebb0019fe71990a
+[2015-04-02 11:44:50.966,Pyro4.core,DEBUG] connecting to PYRO:obj_0a4dcf00d27845d28ebb0019fe71990a@localhost:38224
+[2015-04-02 11:44:50.967,Pyro4.core,DEBUG] connected to PYRO:obj_0a4dcf00d27845d28ebb0019fe71990a@localhost:38224
+[2015-04-02 11:44:50.967,Pyro4.core,DEBUG] getting metadata for object obj_0a4dcf00d27845d28ebb0019fe71990a
+[2015-04-02 11:44:50.968,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:44:50.968,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:44:50.968,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:44:50.969,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:44:50.970,Pyro4.core,DEBUG] getting metadata for object obj_8ad525b2f897491083a1301c7856e2ad
+[2015-04-02 11:44:50.970,Pyro4.core,DEBUG] connecting to PYRO:obj_8ad525b2f897491083a1301c7856e2ad@localhost:55384
+[2015-04-02 11:44:50.971,Pyro4.core,DEBUG] connected to PYRO:obj_8ad525b2f897491083a1301c7856e2ad@localhost:55384
+[2015-04-02 11:44:50.971,Pyro4.core,DEBUG] getting metadata for object obj_8ad525b2f897491083a1301c7856e2ad
+[2015-04-02 11:44:50.971,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:44:50.972,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:44:50.972,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:44:50.973,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:44:50.973,Pyro4.core,DEBUG] getting metadata for object obj_d6c26e89a58b4045a8091fa879acdeff
+[2015-04-02 11:44:50.973,Pyro4.core,DEBUG] connecting to PYRO:obj_d6c26e89a58b4045a8091fa879acdeff@localhost:47951
+[2015-04-02 11:44:50.974,Pyro4.core,DEBUG] connected to PYRO:obj_d6c26e89a58b4045a8091fa879acdeff@localhost:47951
+[2015-04-02 11:44:50.974,Pyro4.core,DEBUG] getting metadata for object obj_d6c26e89a58b4045a8091fa879acdeff
+[2015-04-02 11:44:50.974,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:44:50.975,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:44:50.975,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:44:50.976,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:44:50.976,Pyro4.core,DEBUG] getting metadata for object obj_f4acdcec9ecf4473a1b5089527294d97
+[2015-04-02 11:44:50.976,Pyro4.core,DEBUG] connecting to PYRO:obj_f4acdcec9ecf4473a1b5089527294d97@localhost:54044
+[2015-04-02 11:44:50.977,Pyro4.core,DEBUG] connected to PYRO:obj_f4acdcec9ecf4473a1b5089527294d97@localhost:54044
+[2015-04-02 11:44:50.977,Pyro4.core,DEBUG] getting metadata for object obj_f4acdcec9ecf4473a1b5089527294d97
+[2015-04-02 11:44:50.977,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:44:50.977,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:44:50.978,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:44:50.978,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:44:50.978,Pyro4.core,DEBUG] getting metadata for object obj_9c703df8dfc34b6a99629603eb00f54c
+[2015-04-02 11:44:50.979,Pyro4.core,DEBUG] connecting to PYRO:obj_9c703df8dfc34b6a99629603eb00f54c@localhost:32879
+[2015-04-02 11:44:50.979,Pyro4.core,DEBUG] connected to PYRO:obj_9c703df8dfc34b6a99629603eb00f54c@localhost:32879
+[2015-04-02 11:44:50.979,Pyro4.core,DEBUG] getting metadata for object obj_9c703df8dfc34b6a99629603eb00f54c
+[2015-04-02 11:44:50.980,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:44:50.980,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:44:50.980,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:44:50.988,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:44:50.989,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:50:03.317,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:50:03.463,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:50:03.464,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:50:03.464,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:50:03.464,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:50:03.466,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:50:03.466,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:50:03.466,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:50:03.467,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:50:03.467,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:50:03.467,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:50:03.469,Pyro4.core,DEBUG] getting metadata for object obj_a6407dbc4340449ba62c8f0528c84533
+[2015-04-02 11:50:03.469,Pyro4.core,DEBUG] connecting to PYRO:obj_a6407dbc4340449ba62c8f0528c84533@localhost:51693
+[2015-04-02 11:50:03.479,Pyro4.core,DEBUG] connected to PYRO:obj_a6407dbc4340449ba62c8f0528c84533@localhost:51693
+[2015-04-02 11:50:03.479,Pyro4.core,DEBUG] getting metadata for object obj_a6407dbc4340449ba62c8f0528c84533
+[2015-04-02 11:50:03.480,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:50:03.480,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:50:03.480,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:50:03.490,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:50:03.491,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:14.354,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:51:14.500,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:51:14.501,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:51:14.501,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:51:14.501,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:51:14.503,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:51:14.503,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:51:14.504,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:14.504,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:51:14.504,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:14.504,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:51:14.506,Pyro4.core,DEBUG] getting metadata for object obj_6d92bd1241f34f70bbccd14c6df85792
+[2015-04-02 11:51:14.506,Pyro4.core,DEBUG] connecting to PYRO:obj_6d92bd1241f34f70bbccd14c6df85792@localhost:51586
+[2015-04-02 11:51:14.516,Pyro4.core,DEBUG] connected to PYRO:obj_6d92bd1241f34f70bbccd14c6df85792@localhost:51586
+[2015-04-02 11:51:14.516,Pyro4.core,DEBUG] getting metadata for object obj_6d92bd1241f34f70bbccd14c6df85792
+[2015-04-02 11:51:14.517,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:14.518,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:14.518,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:14.519,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:14.519,Pyro4.core,DEBUG] getting metadata for object obj_fd3dbfb4c4a74a7490ff512e7abeef56
+[2015-04-02 11:51:14.519,Pyro4.core,DEBUG] connecting to PYRO:obj_fd3dbfb4c4a74a7490ff512e7abeef56@localhost:59931
+[2015-04-02 11:51:14.520,Pyro4.core,DEBUG] connected to PYRO:obj_fd3dbfb4c4a74a7490ff512e7abeef56@localhost:59931
+[2015-04-02 11:51:14.520,Pyro4.core,DEBUG] getting metadata for object obj_fd3dbfb4c4a74a7490ff512e7abeef56
+[2015-04-02 11:51:14.521,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:14.521,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:14.521,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:14.522,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:14.522,Pyro4.core,DEBUG] getting metadata for object obj_23832e3fe2ad481b909290f838a04cde
+[2015-04-02 11:51:14.522,Pyro4.core,DEBUG] connecting to PYRO:obj_23832e3fe2ad481b909290f838a04cde@localhost:44341
+[2015-04-02 11:51:14.523,Pyro4.core,DEBUG] connected to PYRO:obj_23832e3fe2ad481b909290f838a04cde@localhost:44341
+[2015-04-02 11:51:14.524,Pyro4.core,DEBUG] getting metadata for object obj_23832e3fe2ad481b909290f838a04cde
+[2015-04-02 11:51:14.524,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:14.524,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:14.524,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:14.525,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:14.525,Pyro4.core,DEBUG] getting metadata for object obj_33de1000426b4e128606ff77c4364bba
+[2015-04-02 11:51:14.526,Pyro4.core,DEBUG] connecting to PYRO:obj_33de1000426b4e128606ff77c4364bba@localhost:44360
+[2015-04-02 11:51:14.527,Pyro4.core,DEBUG] connected to PYRO:obj_33de1000426b4e128606ff77c4364bba@localhost:44360
+[2015-04-02 11:51:14.527,Pyro4.core,DEBUG] getting metadata for object obj_33de1000426b4e128606ff77c4364bba
+[2015-04-02 11:51:14.528,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:14.528,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:14.528,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:14.529,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:14.529,Pyro4.core,DEBUG] getting metadata for object obj_1afdb2833276446d906132f8493af0bb
+[2015-04-02 11:51:14.529,Pyro4.core,DEBUG] connecting to PYRO:obj_1afdb2833276446d906132f8493af0bb@localhost:56790
+[2015-04-02 11:51:14.530,Pyro4.core,DEBUG] connected to PYRO:obj_1afdb2833276446d906132f8493af0bb@localhost:56790
+[2015-04-02 11:51:14.530,Pyro4.core,DEBUG] getting metadata for object obj_1afdb2833276446d906132f8493af0bb
+[2015-04-02 11:51:14.531,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:14.531,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:14.531,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:14.532,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:14.532,Pyro4.core,DEBUG] getting metadata for object obj_13e5c89fcf72454ebb94be7c663cbe56
+[2015-04-02 11:51:14.532,Pyro4.core,DEBUG] connecting to PYRO:obj_13e5c89fcf72454ebb94be7c663cbe56@localhost:53845
+[2015-04-02 11:51:14.533,Pyro4.core,DEBUG] connected to PYRO:obj_13e5c89fcf72454ebb94be7c663cbe56@localhost:53845
+[2015-04-02 11:51:14.533,Pyro4.core,DEBUG] getting metadata for object obj_13e5c89fcf72454ebb94be7c663cbe56
+[2015-04-02 11:51:14.534,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:14.534,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:14.534,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:14.535,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:14.535,Pyro4.core,DEBUG] getting metadata for object obj_30da9d9755cb4f98af3043f488b7dc64
+[2015-04-02 11:51:14.535,Pyro4.core,DEBUG] connecting to PYRO:obj_30da9d9755cb4f98af3043f488b7dc64@localhost:36710
+[2015-04-02 11:51:14.536,Pyro4.core,DEBUG] connected to PYRO:obj_30da9d9755cb4f98af3043f488b7dc64@localhost:36710
+[2015-04-02 11:51:14.536,Pyro4.core,DEBUG] getting metadata for object obj_30da9d9755cb4f98af3043f488b7dc64
+[2015-04-02 11:51:14.537,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:14.537,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:14.537,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:14.538,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:14.538,Pyro4.core,DEBUG] getting metadata for object obj_7e722a58703f469a9e2e8327f40b964a
+[2015-04-02 11:51:14.538,Pyro4.core,DEBUG] connecting to PYRO:obj_7e722a58703f469a9e2e8327f40b964a@localhost:59456
+[2015-04-02 11:51:14.539,Pyro4.core,DEBUG] connected to PYRO:obj_7e722a58703f469a9e2e8327f40b964a@localhost:59456
+[2015-04-02 11:51:14.539,Pyro4.core,DEBUG] getting metadata for object obj_7e722a58703f469a9e2e8327f40b964a
+[2015-04-02 11:51:14.540,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:14.540,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:14.540,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:14.541,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:14.541,Pyro4.core,DEBUG] getting metadata for object obj_e0c68297cdb04a6097c74da9adcbace4
+[2015-04-02 11:51:14.541,Pyro4.core,DEBUG] connecting to PYRO:obj_e0c68297cdb04a6097c74da9adcbace4@localhost:37134
+[2015-04-02 11:51:14.542,Pyro4.core,DEBUG] connected to PYRO:obj_e0c68297cdb04a6097c74da9adcbace4@localhost:37134
+[2015-04-02 11:51:14.542,Pyro4.core,DEBUG] getting metadata for object obj_e0c68297cdb04a6097c74da9adcbace4
+[2015-04-02 11:51:14.543,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:14.543,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:14.543,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:14.544,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:14.544,Pyro4.core,DEBUG] getting metadata for object obj_c72c2aebb3404e519b81c15f7255cd34
+[2015-04-02 11:51:14.544,Pyro4.core,DEBUG] connecting to PYRO:obj_c72c2aebb3404e519b81c15f7255cd34@localhost:39162
+[2015-04-02 11:51:14.545,Pyro4.core,DEBUG] connected to PYRO:obj_c72c2aebb3404e519b81c15f7255cd34@localhost:39162
+[2015-04-02 11:51:14.545,Pyro4.core,DEBUG] getting metadata for object obj_c72c2aebb3404e519b81c15f7255cd34
+[2015-04-02 11:51:14.546,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:14.546,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:14.546,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:14.554,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:14.555,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:18.372,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 11:51:18.437,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 11:51:18.438,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:51:18.439,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:51:18.439,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:51:18.440,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 11:51:18.440,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 11:51:18.441,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:18.441,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 11:51:18.441,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:18.442,Pyro4.naming,DEBUG] located NS
+[2015-04-02 11:51:18.443,Pyro4.core,DEBUG] getting metadata for object obj_6d92bd1241f34f70bbccd14c6df85792
+[2015-04-02 11:51:18.443,Pyro4.core,DEBUG] connecting to PYRO:obj_6d92bd1241f34f70bbccd14c6df85792@localhost:51586
+[2015-04-02 11:51:18.450,Pyro4.core,DEBUG] connected to PYRO:obj_6d92bd1241f34f70bbccd14c6df85792@localhost:51586
+[2015-04-02 11:51:18.450,Pyro4.core,DEBUG] getting metadata for object obj_6d92bd1241f34f70bbccd14c6df85792
+[2015-04-02 11:51:18.451,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:18.451,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:18.451,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:18.452,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:18.452,Pyro4.core,DEBUG] getting metadata for object obj_fd3dbfb4c4a74a7490ff512e7abeef56
+[2015-04-02 11:51:18.452,Pyro4.core,DEBUG] connecting to PYRO:obj_fd3dbfb4c4a74a7490ff512e7abeef56@localhost:59931
+[2015-04-02 11:51:18.453,Pyro4.core,DEBUG] connected to PYRO:obj_fd3dbfb4c4a74a7490ff512e7abeef56@localhost:59931
+[2015-04-02 11:51:18.453,Pyro4.core,DEBUG] getting metadata for object obj_fd3dbfb4c4a74a7490ff512e7abeef56
+[2015-04-02 11:51:18.454,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:18.454,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:18.454,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:18.455,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:18.455,Pyro4.core,DEBUG] getting metadata for object obj_23832e3fe2ad481b909290f838a04cde
+[2015-04-02 11:51:18.455,Pyro4.core,DEBUG] connecting to PYRO:obj_23832e3fe2ad481b909290f838a04cde@localhost:44341
+[2015-04-02 11:51:18.456,Pyro4.core,DEBUG] connected to PYRO:obj_23832e3fe2ad481b909290f838a04cde@localhost:44341
+[2015-04-02 11:51:18.456,Pyro4.core,DEBUG] getting metadata for object obj_23832e3fe2ad481b909290f838a04cde
+[2015-04-02 11:51:18.457,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:18.457,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:18.457,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:18.459,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:18.459,Pyro4.core,DEBUG] getting metadata for object obj_33de1000426b4e128606ff77c4364bba
+[2015-04-02 11:51:18.459,Pyro4.core,DEBUG] connecting to PYRO:obj_33de1000426b4e128606ff77c4364bba@localhost:44360
+[2015-04-02 11:51:18.460,Pyro4.core,DEBUG] connected to PYRO:obj_33de1000426b4e128606ff77c4364bba@localhost:44360
+[2015-04-02 11:51:18.460,Pyro4.core,DEBUG] getting metadata for object obj_33de1000426b4e128606ff77c4364bba
+[2015-04-02 11:51:18.461,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:18.461,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:18.461,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:18.462,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:18.463,Pyro4.core,DEBUG] getting metadata for object obj_1afdb2833276446d906132f8493af0bb
+[2015-04-02 11:51:18.463,Pyro4.core,DEBUG] connecting to PYRO:obj_1afdb2833276446d906132f8493af0bb@localhost:56790
+[2015-04-02 11:51:18.463,Pyro4.core,DEBUG] connected to PYRO:obj_1afdb2833276446d906132f8493af0bb@localhost:56790
+[2015-04-02 11:51:18.464,Pyro4.core,DEBUG] getting metadata for object obj_1afdb2833276446d906132f8493af0bb
+[2015-04-02 11:51:18.464,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:18.464,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:18.465,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:18.466,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:18.466,Pyro4.core,DEBUG] getting metadata for object obj_13e5c89fcf72454ebb94be7c663cbe56
+[2015-04-02 11:51:18.466,Pyro4.core,DEBUG] connecting to PYRO:obj_13e5c89fcf72454ebb94be7c663cbe56@localhost:53845
+[2015-04-02 11:51:18.467,Pyro4.core,DEBUG] connected to PYRO:obj_13e5c89fcf72454ebb94be7c663cbe56@localhost:53845
+[2015-04-02 11:51:18.467,Pyro4.core,DEBUG] getting metadata for object obj_13e5c89fcf72454ebb94be7c663cbe56
+[2015-04-02 11:51:18.468,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:18.468,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:18.468,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:18.469,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:18.469,Pyro4.core,DEBUG] getting metadata for object obj_30da9d9755cb4f98af3043f488b7dc64
+[2015-04-02 11:51:18.469,Pyro4.core,DEBUG] connecting to PYRO:obj_30da9d9755cb4f98af3043f488b7dc64@localhost:36710
+[2015-04-02 11:51:18.470,Pyro4.core,DEBUG] connected to PYRO:obj_30da9d9755cb4f98af3043f488b7dc64@localhost:36710
+[2015-04-02 11:51:18.470,Pyro4.core,DEBUG] getting metadata for object obj_30da9d9755cb4f98af3043f488b7dc64
+[2015-04-02 11:51:18.471,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:18.471,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:18.471,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:18.472,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:18.473,Pyro4.core,DEBUG] getting metadata for object obj_7e722a58703f469a9e2e8327f40b964a
+[2015-04-02 11:51:18.473,Pyro4.core,DEBUG] connecting to PYRO:obj_7e722a58703f469a9e2e8327f40b964a@localhost:59456
+[2015-04-02 11:51:18.473,Pyro4.core,DEBUG] connected to PYRO:obj_7e722a58703f469a9e2e8327f40b964a@localhost:59456
+[2015-04-02 11:51:18.474,Pyro4.core,DEBUG] getting metadata for object obj_7e722a58703f469a9e2e8327f40b964a
+[2015-04-02 11:51:18.474,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:18.474,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:18.474,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:18.476,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:18.476,Pyro4.core,DEBUG] getting metadata for object obj_e0c68297cdb04a6097c74da9adcbace4
+[2015-04-02 11:51:18.476,Pyro4.core,DEBUG] connecting to PYRO:obj_e0c68297cdb04a6097c74da9adcbace4@localhost:37134
+[2015-04-02 11:51:18.477,Pyro4.core,DEBUG] connected to PYRO:obj_e0c68297cdb04a6097c74da9adcbace4@localhost:37134
+[2015-04-02 11:51:18.477,Pyro4.core,DEBUG] getting metadata for object obj_e0c68297cdb04a6097c74da9adcbace4
+[2015-04-02 11:51:18.478,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:18.478,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:18.478,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:18.479,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:18.479,Pyro4.core,DEBUG] getting metadata for object obj_c72c2aebb3404e519b81c15f7255cd34
+[2015-04-02 11:51:18.479,Pyro4.core,DEBUG] connecting to PYRO:obj_c72c2aebb3404e519b81c15f7255cd34@localhost:39162
+[2015-04-02 11:51:18.480,Pyro4.core,DEBUG] connected to PYRO:obj_c72c2aebb3404e519b81c15f7255cd34@localhost:39162
+[2015-04-02 11:51:18.480,Pyro4.core,DEBUG] getting metadata for object obj_c72c2aebb3404e519b81c15f7255cd34
+[2015-04-02 11:51:18.480,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 11:51:18.480,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 11:51:18.480,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 11:51:18.487,Pyro4.core,DEBUG] connection released
+[2015-04-02 11:51:18.488,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:49.336,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 12:00:49.400,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 12:00:49.401,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 12:00:49.402,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 12:00:49.402,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 12:00:49.403,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 12:00:49.403,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 12:00:49.404,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:49.404,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 12:00:49.404,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:49.405,Pyro4.naming,DEBUG] located NS
+[2015-04-02 12:00:49.406,Pyro4.core,DEBUG] getting metadata for object obj_09e5b01d0086432985c0ac7549d46e08
+[2015-04-02 12:00:49.406,Pyro4.core,DEBUG] connecting to PYRO:obj_09e5b01d0086432985c0ac7549d46e08@localhost:50186
+[2015-04-02 12:00:49.413,Pyro4.core,DEBUG] connected to PYRO:obj_09e5b01d0086432985c0ac7549d46e08@localhost:50186
+[2015-04-02 12:00:49.413,Pyro4.core,DEBUG] getting metadata for object obj_09e5b01d0086432985c0ac7549d46e08
+[2015-04-02 12:00:49.414,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:49.414,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:49.414,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:49.415,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:49.415,Pyro4.core,DEBUG] getting metadata for object obj_d6c25c6253f14529b123a2da394dd353
+[2015-04-02 12:00:49.415,Pyro4.core,DEBUG] connecting to PYRO:obj_d6c25c6253f14529b123a2da394dd353@localhost:56077
+[2015-04-02 12:00:49.416,Pyro4.core,DEBUG] connected to PYRO:obj_d6c25c6253f14529b123a2da394dd353@localhost:56077
+[2015-04-02 12:00:49.417,Pyro4.core,DEBUG] getting metadata for object obj_d6c25c6253f14529b123a2da394dd353
+[2015-04-02 12:00:49.417,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:49.417,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:49.418,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:49.419,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:49.419,Pyro4.core,DEBUG] getting metadata for object obj_67c6bcc8c37340598afd16e1d006ac48
+[2015-04-02 12:00:49.419,Pyro4.core,DEBUG] connecting to PYRO:obj_67c6bcc8c37340598afd16e1d006ac48@localhost:41747
+[2015-04-02 12:00:49.420,Pyro4.core,DEBUG] connected to PYRO:obj_67c6bcc8c37340598afd16e1d006ac48@localhost:41747
+[2015-04-02 12:00:49.420,Pyro4.core,DEBUG] getting metadata for object obj_67c6bcc8c37340598afd16e1d006ac48
+[2015-04-02 12:00:49.421,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:49.421,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:49.421,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:49.422,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:49.422,Pyro4.core,DEBUG] getting metadata for object obj_8c92af95b485417b9848960a201f6ab0
+[2015-04-02 12:00:49.422,Pyro4.core,DEBUG] connecting to PYRO:obj_8c92af95b485417b9848960a201f6ab0@localhost:53269
+[2015-04-02 12:00:49.423,Pyro4.core,DEBUG] connected to PYRO:obj_8c92af95b485417b9848960a201f6ab0@localhost:53269
+[2015-04-02 12:00:49.423,Pyro4.core,DEBUG] getting metadata for object obj_8c92af95b485417b9848960a201f6ab0
+[2015-04-02 12:00:49.424,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:49.424,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:49.424,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:49.425,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:49.426,Pyro4.core,DEBUG] getting metadata for object obj_0af59ddbec0640be8a1f9824e884c32c
+[2015-04-02 12:00:49.426,Pyro4.core,DEBUG] connecting to PYRO:obj_0af59ddbec0640be8a1f9824e884c32c@localhost:56344
+[2015-04-02 12:00:49.427,Pyro4.core,DEBUG] connected to PYRO:obj_0af59ddbec0640be8a1f9824e884c32c@localhost:56344
+[2015-04-02 12:00:49.427,Pyro4.core,DEBUG] getting metadata for object obj_0af59ddbec0640be8a1f9824e884c32c
+[2015-04-02 12:00:49.427,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:49.428,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:49.428,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:49.429,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:49.429,Pyro4.core,DEBUG] getting metadata for object obj_5ae40337a1c24b88a1d0afd3903aaa52
+[2015-04-02 12:00:49.429,Pyro4.core,DEBUG] connecting to PYRO:obj_5ae40337a1c24b88a1d0afd3903aaa52@localhost:49015
+[2015-04-02 12:00:49.430,Pyro4.core,DEBUG] connected to PYRO:obj_5ae40337a1c24b88a1d0afd3903aaa52@localhost:49015
+[2015-04-02 12:00:49.430,Pyro4.core,DEBUG] getting metadata for object obj_5ae40337a1c24b88a1d0afd3903aaa52
+[2015-04-02 12:00:49.431,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:49.431,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:49.431,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:49.432,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:49.432,Pyro4.core,DEBUG] getting metadata for object obj_1d9a13ff91034d2bbbc62f661c1c3391
+[2015-04-02 12:00:49.432,Pyro4.core,DEBUG] connecting to PYRO:obj_1d9a13ff91034d2bbbc62f661c1c3391@localhost:41313
+[2015-04-02 12:00:49.433,Pyro4.core,DEBUG] connected to PYRO:obj_1d9a13ff91034d2bbbc62f661c1c3391@localhost:41313
+[2015-04-02 12:00:49.433,Pyro4.core,DEBUG] getting metadata for object obj_1d9a13ff91034d2bbbc62f661c1c3391
+[2015-04-02 12:00:49.434,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:49.434,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:49.434,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:49.435,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:49.435,Pyro4.core,DEBUG] getting metadata for object obj_e59aa5c049bc461db23e915eb835d98a
+[2015-04-02 12:00:49.436,Pyro4.core,DEBUG] connecting to PYRO:obj_e59aa5c049bc461db23e915eb835d98a@localhost:56098
+[2015-04-02 12:00:49.437,Pyro4.core,DEBUG] connected to PYRO:obj_e59aa5c049bc461db23e915eb835d98a@localhost:56098
+[2015-04-02 12:00:49.437,Pyro4.core,DEBUG] getting metadata for object obj_e59aa5c049bc461db23e915eb835d98a
+[2015-04-02 12:00:49.437,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:49.438,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:49.438,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:49.439,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:49.439,Pyro4.core,DEBUG] getting metadata for object obj_6fb735520c9f43f6abb78da9bf578f6e
+[2015-04-02 12:00:49.439,Pyro4.core,DEBUG] connecting to PYRO:obj_6fb735520c9f43f6abb78da9bf578f6e@localhost:48055
+[2015-04-02 12:00:49.440,Pyro4.core,DEBUG] connected to PYRO:obj_6fb735520c9f43f6abb78da9bf578f6e@localhost:48055
+[2015-04-02 12:00:49.440,Pyro4.core,DEBUG] getting metadata for object obj_6fb735520c9f43f6abb78da9bf578f6e
+[2015-04-02 12:00:49.441,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:49.441,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:49.441,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:49.442,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:49.442,Pyro4.core,DEBUG] getting metadata for object obj_e4ca39376603445882073a21bb79c05f
+[2015-04-02 12:00:49.442,Pyro4.core,DEBUG] connecting to PYRO:obj_e4ca39376603445882073a21bb79c05f@localhost:59708
+[2015-04-02 12:00:49.443,Pyro4.core,DEBUG] connected to PYRO:obj_e4ca39376603445882073a21bb79c05f@localhost:59708
+[2015-04-02 12:00:49.443,Pyro4.core,DEBUG] getting metadata for object obj_e4ca39376603445882073a21bb79c05f
+[2015-04-02 12:00:49.444,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:49.444,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:49.444,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:49.453,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:49.453,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:53.632,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 12:00:53.695,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 12:00:53.696,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 12:00:53.696,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 12:00:53.696,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 12:00:53.698,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 12:00:53.698,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 12:00:53.699,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:53.699,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 12:00:53.699,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:53.700,Pyro4.naming,DEBUG] located NS
+[2015-04-02 12:00:53.703,Pyro4.core,DEBUG] getting metadata for object obj_8c92af95b485417b9848960a201f6ab0
+[2015-04-02 12:00:53.704,Pyro4.core,DEBUG] connecting to PYRO:obj_8c92af95b485417b9848960a201f6ab0@localhost:53269
+[2015-04-02 12:00:53.711,Pyro4.core,DEBUG] connected to PYRO:obj_8c92af95b485417b9848960a201f6ab0@localhost:53269
+[2015-04-02 12:00:53.711,Pyro4.core,DEBUG] getting metadata for object obj_8c92af95b485417b9848960a201f6ab0
+[2015-04-02 12:00:53.712,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:53.712,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:53.712,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:53.714,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:53.714,Pyro4.core,DEBUG] getting metadata for object obj_67c6bcc8c37340598afd16e1d006ac48
+[2015-04-02 12:00:53.714,Pyro4.core,DEBUG] connecting to PYRO:obj_67c6bcc8c37340598afd16e1d006ac48@localhost:41747
+[2015-04-02 12:00:53.715,Pyro4.core,DEBUG] connected to PYRO:obj_67c6bcc8c37340598afd16e1d006ac48@localhost:41747
+[2015-04-02 12:00:53.715,Pyro4.core,DEBUG] getting metadata for object obj_67c6bcc8c37340598afd16e1d006ac48
+[2015-04-02 12:00:53.716,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:53.716,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:53.716,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:53.717,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:53.718,Pyro4.core,DEBUG] getting metadata for object obj_e59aa5c049bc461db23e915eb835d98a
+[2015-04-02 12:00:53.718,Pyro4.core,DEBUG] connecting to PYRO:obj_e59aa5c049bc461db23e915eb835d98a@localhost:56098
+[2015-04-02 12:00:53.719,Pyro4.core,DEBUG] connected to PYRO:obj_e59aa5c049bc461db23e915eb835d98a@localhost:56098
+[2015-04-02 12:00:53.719,Pyro4.core,DEBUG] getting metadata for object obj_e59aa5c049bc461db23e915eb835d98a
+[2015-04-02 12:00:53.719,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:53.720,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:53.720,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:53.726,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:53.727,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:55.105,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2015-04-02 12:00:55.168,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2015-04-02 12:00:55.169,Pyro4.naming,DEBUG] locating the NS: PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 12:00:55.169,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 12:00:55.169,Pyro4.core,DEBUG] connecting to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 12:00:55.170,Pyro4.core,DEBUG] connected to PYRO:Pyro.NameServer@localhost:9090
+[2015-04-02 12:00:55.170,Pyro4.core,DEBUG] getting metadata for object Pyro.NameServer
+[2015-04-02 12:00:55.171,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:55.171,Pyro4.core,DEBUG] from meta: methods=[u'count', u'list', u'lookup', u'ping', u'register', u'remove']
+[2015-04-02 12:00:55.171,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:55.172,Pyro4.naming,DEBUG] located NS
+[2015-04-02 12:00:55.173,Pyro4.core,DEBUG] getting metadata for object obj_09e5b01d0086432985c0ac7549d46e08
+[2015-04-02 12:00:55.173,Pyro4.core,DEBUG] connecting to PYRO:obj_09e5b01d0086432985c0ac7549d46e08@localhost:50186
+[2015-04-02 12:00:55.179,Pyro4.core,DEBUG] connected to PYRO:obj_09e5b01d0086432985c0ac7549d46e08@localhost:50186
+[2015-04-02 12:00:55.179,Pyro4.core,DEBUG] getting metadata for object obj_09e5b01d0086432985c0ac7549d46e08
+[2015-04-02 12:00:55.180,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:55.180,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:55.180,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:55.182,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:55.182,Pyro4.core,DEBUG] getting metadata for object obj_d6c25c6253f14529b123a2da394dd353
+[2015-04-02 12:00:55.182,Pyro4.core,DEBUG] connecting to PYRO:obj_d6c25c6253f14529b123a2da394dd353@localhost:56077
+[2015-04-02 12:00:55.183,Pyro4.core,DEBUG] connected to PYRO:obj_d6c25c6253f14529b123a2da394dd353@localhost:56077
+[2015-04-02 12:00:55.183,Pyro4.core,DEBUG] getting metadata for object obj_d6c25c6253f14529b123a2da394dd353
+[2015-04-02 12:00:55.184,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:55.184,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:55.184,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:55.186,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:55.186,Pyro4.core,DEBUG] getting metadata for object obj_67c6bcc8c37340598afd16e1d006ac48
+[2015-04-02 12:00:55.186,Pyro4.core,DEBUG] connecting to PYRO:obj_67c6bcc8c37340598afd16e1d006ac48@localhost:41747
+[2015-04-02 12:00:55.187,Pyro4.core,DEBUG] connected to PYRO:obj_67c6bcc8c37340598afd16e1d006ac48@localhost:41747
+[2015-04-02 12:00:55.187,Pyro4.core,DEBUG] getting metadata for object obj_67c6bcc8c37340598afd16e1d006ac48
+[2015-04-02 12:00:55.188,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:55.188,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:55.188,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:55.189,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:55.190,Pyro4.core,DEBUG] getting metadata for object obj_8c92af95b485417b9848960a201f6ab0
+[2015-04-02 12:00:55.190,Pyro4.core,DEBUG] connecting to PYRO:obj_8c92af95b485417b9848960a201f6ab0@localhost:53269
+[2015-04-02 12:00:55.191,Pyro4.core,DEBUG] connected to PYRO:obj_8c92af95b485417b9848960a201f6ab0@localhost:53269
+[2015-04-02 12:00:55.191,Pyro4.core,DEBUG] getting metadata for object obj_8c92af95b485417b9848960a201f6ab0
+[2015-04-02 12:00:55.192,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:55.192,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:55.192,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:55.194,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:55.194,Pyro4.core,DEBUG] getting metadata for object obj_0af59ddbec0640be8a1f9824e884c32c
+[2015-04-02 12:00:55.194,Pyro4.core,DEBUG] connecting to PYRO:obj_0af59ddbec0640be8a1f9824e884c32c@localhost:56344
+[2015-04-02 12:00:55.195,Pyro4.core,DEBUG] connected to PYRO:obj_0af59ddbec0640be8a1f9824e884c32c@localhost:56344
+[2015-04-02 12:00:55.195,Pyro4.core,DEBUG] getting metadata for object obj_0af59ddbec0640be8a1f9824e884c32c
+[2015-04-02 12:00:55.196,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:55.196,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:55.196,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:55.197,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:55.198,Pyro4.core,DEBUG] getting metadata for object obj_5ae40337a1c24b88a1d0afd3903aaa52
+[2015-04-02 12:00:55.198,Pyro4.core,DEBUG] connecting to PYRO:obj_5ae40337a1c24b88a1d0afd3903aaa52@localhost:49015
+[2015-04-02 12:00:55.199,Pyro4.core,DEBUG] connected to PYRO:obj_5ae40337a1c24b88a1d0afd3903aaa52@localhost:49015
+[2015-04-02 12:00:55.199,Pyro4.core,DEBUG] getting metadata for object obj_5ae40337a1c24b88a1d0afd3903aaa52
+[2015-04-02 12:00:55.200,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:55.200,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:55.200,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:55.202,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:55.202,Pyro4.core,DEBUG] getting metadata for object obj_1d9a13ff91034d2bbbc62f661c1c3391
+[2015-04-02 12:00:55.202,Pyro4.core,DEBUG] connecting to PYRO:obj_1d9a13ff91034d2bbbc62f661c1c3391@localhost:41313
+[2015-04-02 12:00:55.203,Pyro4.core,DEBUG] connected to PYRO:obj_1d9a13ff91034d2bbbc62f661c1c3391@localhost:41313
+[2015-04-02 12:00:55.203,Pyro4.core,DEBUG] getting metadata for object obj_1d9a13ff91034d2bbbc62f661c1c3391
+[2015-04-02 12:00:55.204,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:55.204,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:55.204,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:55.206,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:55.206,Pyro4.core,DEBUG] getting metadata for object obj_e59aa5c049bc461db23e915eb835d98a
+[2015-04-02 12:00:55.206,Pyro4.core,DEBUG] connecting to PYRO:obj_e59aa5c049bc461db23e915eb835d98a@localhost:56098
+[2015-04-02 12:00:55.207,Pyro4.core,DEBUG] connected to PYRO:obj_e59aa5c049bc461db23e915eb835d98a@localhost:56098
+[2015-04-02 12:00:55.207,Pyro4.core,DEBUG] getting metadata for object obj_e59aa5c049bc461db23e915eb835d98a
+[2015-04-02 12:00:55.208,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:55.208,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:55.208,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:55.209,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:55.210,Pyro4.core,DEBUG] getting metadata for object obj_6fb735520c9f43f6abb78da9bf578f6e
+[2015-04-02 12:00:55.210,Pyro4.core,DEBUG] connecting to PYRO:obj_6fb735520c9f43f6abb78da9bf578f6e@localhost:48055
+[2015-04-02 12:00:55.210,Pyro4.core,DEBUG] connected to PYRO:obj_6fb735520c9f43f6abb78da9bf578f6e@localhost:48055
+[2015-04-02 12:00:55.211,Pyro4.core,DEBUG] getting metadata for object obj_6fb735520c9f43f6abb78da9bf578f6e
+[2015-04-02 12:00:55.211,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:55.211,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:55.211,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:55.212,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:55.212,Pyro4.core,DEBUG] getting metadata for object obj_e4ca39376603445882073a21bb79c05f
+[2015-04-02 12:00:55.212,Pyro4.core,DEBUG] connecting to PYRO:obj_e4ca39376603445882073a21bb79c05f@localhost:59708
+[2015-04-02 12:00:55.213,Pyro4.core,DEBUG] connected to PYRO:obj_e4ca39376603445882073a21bb79c05f@localhost:59708
+[2015-04-02 12:00:55.213,Pyro4.core,DEBUG] getting metadata for object obj_e4ca39376603445882073a21bb79c05f
+[2015-04-02 12:00:55.214,Pyro4.core,DEBUG] from meta: oneway methods=[]
+[2015-04-02 12:00:55.214,Pyro4.core,DEBUG] from meta: methods=[u'add_fils', u'get_fils', u'get_value']
+[2015-04-02 12:00:55.214,Pyro4.core,DEBUG] from meta: attributes=[]
+[2015-04-02 12:00:55.222,Pyro4.core,DEBUG] connection released
+[2015-04-02 12:00:55.222,Pyro4.core,DEBUG] connection released
