@@ -3,7 +3,7 @@ import Pyro4
 
 sites = {}
 
-for i in range(10):
+for i in range(6):
     sites[i] = SiteRMI.SiteRMI(i)
     sites[i].register()
     sites[i].enterLoop()

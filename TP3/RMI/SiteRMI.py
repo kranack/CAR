@@ -9,8 +9,10 @@ class SiteRMI:
     fils = []
 
     def __init__(self, id, pere = None):
-        self.value = id
+        self._id = id
         self.pere = pere
+        self.fils = []
+        self.value = None
         self.launchDaemon()
 
     def launchDaemon(self):
@@ -23,7 +25,22 @@ class SiteRMI:
     def register(self):
         self._uri = self._daemon.register(self)
         ns = Pyro4.locateNS()
-        ns.register("site.{0}".format(self.value), self._uri)
+        ns.register("site.{0}".format(self._id), self._uri)
+
+    @Pyro4.expose
+    def send(self, value):
+        self.set_value(value)
+        for f in self.fils:
+            proxy = Pyro4.Proxy(f)
+            proxy.send(value)
+
+    @Pyro4.expose
+    def get_id(self):
+        return self._id
+
+    @Pyro4.expose
+    def set_value(self, value):
+        self.value = value
 
     @Pyro4.expose
     def get_value(self):

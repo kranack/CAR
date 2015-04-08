@@ -10,7 +10,7 @@ class TestCreateRMI(unittest.TestCase):
     def test_create(self):
         site = SiteRMI.SiteRMI(1)
         site.register()
-        self.assertEqual(site.get_value(), 1)
+        self.assertEqual(site.get_id(), 1)
 
     def test_lookup(self):
         site = SiteRMI.SiteRMI(1)
