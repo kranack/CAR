@@ -115,7 +115,7 @@ module FTPServerFunctions
 	# RMD
     def rmd(msg)
         if File.directory? msg
-            Dir::delete msg
+			FileUtils.rmdir msg, :verbose => true
         elsif File.file? msg
             File::delete msg
         end
