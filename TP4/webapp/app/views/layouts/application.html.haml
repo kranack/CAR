@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title #{@page_title} - #{Shoppe.settings.store_name}
+    %title Amazone
     = stylesheet_link_tag :application
     = javascript_include_tag :application
     = csrf_meta_tags
@@ -19,7 +19,7 @@
             %ul
               %li= link_to "Home", root_path, :nav_item => :home
               
-            %h1= link_to Shoppe.settings.store_name, root_path
+            %h1= link_to "Amazone", root_path
           
           - if @full_header
             %h2 Welcome to our <em>shoppe</em>.
@@ -30,6 +30,14 @@
             .inner
               %p.call Call us today on <b>01202 901 101</b> if you have any questions.
               %p.offer <b>This week only!</b> FREE next day shipping on all orders over &pound;30.
+    
+    - if @current_order
+      %p{style="border:1px solid black;padding:10px;"}
+      %p You have 
+      %span.item= pluralize current_order.total_items 
+      %p in your basket which cost
+      %span= number_to_currency current_order.total_before_tax
+    
     
     %div.container
       / Main content section

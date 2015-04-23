@@ -5,10 +5,15 @@ Damien Calesse
 
 *** 1/ Introduction
 
-Ce logiciel utilise le framework Shoppe et Ruby on Rails.
-
-*** 2/ Architecture
+Ce logiciel utilise le framework Spree pour Ruby on Rails.
 
 
+*** 2/ Notes
 
-*** 3/ Code Samples 
+	- Initialiser spree : spree install
+
+*** 3/ Architecture
+
+
+
+*** 4/ Code Samples 

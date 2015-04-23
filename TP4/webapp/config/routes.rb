@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
-  mount Shoppe::Engine => "/shoppe"
+  mount Shoppe::Engine => "/admin"
   
   # Products pages
 	get "product/:permalink", to: "products#show", as: "product"
-	post "product/:permalink", to: "products#buy", as: "buy"
+	post "product/:permalink/buy", to: "products#buy", as: 'buy_product'
+  
+  # Order page
+    get "basket", to: "orders#show"
+  
+  # Index page
 	root to: "products#index"
   
   # The priority is based upon order of creation: first created -> highest priority.
